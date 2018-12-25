@@ -21,7 +21,7 @@
 进入**web**目录下，打开命令行，输入：
 
 ```
-npm install -g grunt-cli bower yo generator-karma generator-angular
+npm install -g grunt-cli yo generator-karma generator-angular
 ```
 
 上面的命令安装项目所需要的工具。
