@@ -6,14 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * 设备
+ * 设备类别
  */
 @Entity
-public class Device {
+public class DeviceType {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;    // 设备名
+    private String name;    // 名称
 
     public String getName() {
         return name;

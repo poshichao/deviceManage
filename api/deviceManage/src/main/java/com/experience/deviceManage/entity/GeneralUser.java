@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * 普通用户
+ */
 @Entity
 public class GeneralUser {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
