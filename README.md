@@ -7,4 +7,8 @@
 
 ## 项目启动
 
-后台基础访问路径为：**localhost:8080/api**
+1.打开**api**路径下deviceManage问价夹下的**pom.xml**文件，以工程的方式打开（open as a project)
+
+2.启动项目
+
+3.后台基础访问路径为：**localhost:8080/api**
