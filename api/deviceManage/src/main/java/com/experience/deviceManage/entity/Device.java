@@ -1,9 +1,6 @@
 package com.experience.deviceManage.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * 设备
@@ -14,6 +11,7 @@ public class Device {
     private Long id;
 
     private String name;            // 设备名
+    @ManyToOne
     private DeviceType deviceType;  // 设备类别
 
     public String getName() {
