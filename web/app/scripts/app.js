@@ -29,9 +29,21 @@ angular
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
             })
-            .when('login', {
+            .when('/login', {
                 templateUrl: 'views/login.html',
                 controller: 'LoginCtrl'
+            })
+            .when('/device', {
+                templateUrl: 'views/device.html',
+                controller: 'DeviceCtrl'
+            })
+            .when('/reserve/:deviceId', {
+                templateUrl: 'views/reserve.html',
+                controller: 'ReserveCtrl'
+            })
+            .when('/lab', {
+                templateUrl: 'views/lab.html',
+                controller: 'LabCtrl'
             })
             .otherwise({
                 redirectTo: '/'
