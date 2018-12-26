@@ -8,12 +8,19 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-    .controller('LoginCtrl', function($scope) {
-        var self = this;
+    .controller('LoginCtrl', function($rootScope, $scope, $location) {
+    	var self = this;
 
-        self.init = function() {
-            $scope.isLogin = true;
-        };
+    	self.init = function() {
+    		$rootScope.isLogin = true;
+    	};
 
-        self.init();
+    	self.login = function() {
+    		$rootScope.isLogin = false;
+    		$location.url('main');
+    	};
+
+    	self.init();
+
+    	$scope.login = self.login;
     });
