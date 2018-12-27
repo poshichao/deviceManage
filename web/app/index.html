@@ -20,8 +20,8 @@
 <!--顶部导航栏-->
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo" href="/#!/"><img src="images/logo.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="/#!/"><img src="images/logo-mini.svg" alt="logo"/></a>
     </div>
 
 
@@ -85,7 +85,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#look-through" aria-expanded="false"
+                <a class="nav-link" data-toggle="collapse" data-target="#look-through" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">浏览</span>
                     <i class="menu-arrow"></i>
@@ -101,14 +101,14 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="pages/icons/mdi.html">
+                <a class="nav-link" href="/#!/users">
                     <span class="menu-title">用户管理</span>
                     <i class="mdi mdi-contacts menu-icon"></i>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#reserve" aria-expanded="false"
+                <a class="nav-link" data-toggle="collapse" data-target="#reserve" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">预约管理</span>
                     <i class="menu-arrow"></i>
@@ -116,8 +116,8 @@
                 </a>
                 <div class="collapse" id="reserve">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"><a class="nav-link" href="/#!/lab">浏览机构</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/device">浏览仪器</a>
+                        <li class="nav-item"><a class="nav-link" href="/#!/myReserve">我的预约</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">审核预约</a>
                         </li>
                     </ul>
                 </div>
@@ -129,11 +129,6 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div ng-view=""></div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <p><span class="glyphicon glyphicon-heart"></span>软件161 227 宿舍</p>
         </div>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -163,12 +158,15 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/lab.js"></script>
     <script src="scripts/controllers/device.js"></script>
     <script src="scripts/controllers/reserve.js"></script>
-    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/users.js"></script>
+    <script src="scripts/controllers/myReserve.js"></script>
+    <script src="scripts/controllers/examineReserve.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
