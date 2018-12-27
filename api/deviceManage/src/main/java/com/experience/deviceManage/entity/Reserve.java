@@ -10,9 +10,10 @@ import java.util.Date;
  * 预约
  */
 public class Reserve {
-    private final static Byte UNEXAMINE = 0;
-    private final static Byte AGREE = 1;
-    private final static Byte DISAGREE = -1;
+    private final static Byte UNEXAMINE = 0;    // 未处理
+    private final static Byte AGREE = 1;        // 同意，但未完成
+    private final static Byte DISAGREE = -1;    // 不同意
+    private final static Byte FINISH = 2;       // 同意，并且预约结束
     @Id@GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
