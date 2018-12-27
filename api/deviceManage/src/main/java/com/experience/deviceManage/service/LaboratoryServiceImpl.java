@@ -14,6 +14,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
     public Laboratory getOneSavedObject() {
         Laboratory laboratory = new Laboratory();
         laboratory.setName("测试实验室");
+        laboratory.setIntroduction("这是一段简介这是一段简介");
         return laboratoryRepository.save(laboratory);
     }
 }
