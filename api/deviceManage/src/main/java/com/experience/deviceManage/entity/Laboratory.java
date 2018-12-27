@@ -12,8 +12,8 @@ public class Laboratory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;    // 名称
-
+    private String name;            // 名称
+    private String introduction;    // 简介
     @OneToMany
     private List<Device> device;  // 设备
 
@@ -31,5 +31,13 @@ public class Laboratory {
 
     public void setDevice(List<Device> device) {
         this.device = device;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
     }
 }
