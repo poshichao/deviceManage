@@ -3,7 +3,9 @@ angular.module('testApp')
         var self = this;
 
         self.init = function () {
-            $scope.data = {};
+            $scope.data = {
+                reserves: []
+            };
         };
 
         self.init();
