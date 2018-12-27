@@ -9,19 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication
 public class DeviceManageApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(DeviceManageApplication.class, args);
-	}
-
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurerAdapter() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api").allowedOrigins("http://localhost:9000");
-			}
-		};
 	}
 }
 

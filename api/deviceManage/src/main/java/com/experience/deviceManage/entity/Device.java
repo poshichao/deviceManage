@@ -14,6 +14,9 @@ public class Device {
     @ManyToOne
     private DeviceType deviceType;  // 设备类别
 
+    @ManyToOne
+    private Laboratory laboratory;  // 实验室
+
     public String getName() {
         return name;
     }
@@ -28,5 +31,13 @@ public class Device {
 
     public void setDeviceType(DeviceType deviceType) {
         this.deviceType = deviceType;
+    }
+
+    public Laboratory getLaboratory() {
+        return laboratory;
+    }
+
+    public void setLaboratory(Laboratory laboratory) {
+        this.laboratory = laboratory;
     }
 }
