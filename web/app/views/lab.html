@@ -3,7 +3,7 @@
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
                 <i class="mdi mdi-home"></i>
               </span>
-        系统首页
+        设备机构浏览
     </h3>
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
@@ -16,3 +16,19 @@
 
 </div>
 
+
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card" ng-repeat="lab in data.labs">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{lab.name}}</h4>
+                <p class="card-description">
+                    Write text in
+                </p>
+                <p>
+                    {{lab.desc}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
