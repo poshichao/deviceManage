@@ -2,11 +2,233 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="778a8d1f-6179-4168-b80c-4c55587c8929" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/css/form-elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/ico/apple-touch-icon-114-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/ico/apple-touch-icon-144-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/ico/apple-touch-icon-57-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/ico/apple-touch-icon-72-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/ico/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/backgrounds/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/backgrounds/1@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/ebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/ebook@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/img/logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/jquery-1.11.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/jquery.backstretch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/jquery.backstretch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/retina-1.1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/retina-1.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/assets/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/scripts/controllers/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/scripts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/scripts/controllers/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/scripts/controllers/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/views/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/PSD/Purple_dashboard_free.psd" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/PSD/Purple_dashboard_free.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/css/maps/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/css/maps/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Bold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Bold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Light.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Light.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Light.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Medium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Medium.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/fonts/Ubuntu/Ubuntu-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/fonts/Ubuntu/Ubuntu-Regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/dashboard/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/dashboard/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/dashboard/img_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/dashboard/img_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/dashboard/img_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/dashboard/img_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/dashboard/img_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/dashboard/img_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/dashboard/img_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/dashboard/img_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces-clipart/pic-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces-clipart/pic-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces-clipart/pic-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces-clipart/pic-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces-clipart/pic-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces-clipart/pic-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces-clipart/pic-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces-clipart/pic-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/faces/face9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/faces/face9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/logo-mini.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/logo-mini.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/js/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/file-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/js/file-upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/js/misc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/off-canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/js/off-canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/charts/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/charts/chartjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/forms/basic_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/forms/basic_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/icons/mdi.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/icons/mdi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/samples/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/samples/blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/samples/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/samples/error-404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/samples/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/samples/error-500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/samples/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/samples/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/samples/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/samples/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/tables/basic-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/tables/basic-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/ui-features/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/pages/ui-features/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/partials/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/partials/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/partials/_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/partials/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/partials/_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_demo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_bootstrap-progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_bootstrap-progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_checkbox-radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_checkbox-radio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_preview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_preview.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/components/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/components/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/landing-screens/_auth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/landing-screens/_auth.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_blockqoute.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_blockqoute.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/mixins/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/mixins/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/css/vendor.bundle.base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/css/vendor.bundle.base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/css/materialdesignicons.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/license.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/license.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_animated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_extras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_extras.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_path.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/materialdesignicons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/scss/materialdesignicons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/js/vendor.bundle.addons.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/js/vendor.bundle.addons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/js/vendor.bundle.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/js/vendor.bundle.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/twts_141_PurpleAdmin/说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/说明.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,13 +245,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="384">
+              <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
             </state>
           </provider>
         </entry>
@@ -52,62 +269,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reserve.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/views/reserve.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="n#div#0;n#row#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reserve.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/scripts/controllers/reserve.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/scripts/controllers/device.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="8147" column="2" lean-forward="true" selection-start-line="8147" selection-start-column="2" selection-end-line="8147" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lab.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/scripts/controllers/lab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/views/device.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#!!top" />
-              </folding>
+            <state relative-caret-position="219618">
+              <caret line="8147" column="2" selection-start-line="8147" selection-start-column="2" selection-end-line="8147" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -184,8 +350,8 @@
       <path value="$PROJECT_DIR$/web/bower_components/angular/package.json" />
       <path value="$PROJECT_DIR$/web/bower_components/bootstrap/package.json" />
       <path value="$PROJECT_DIR$/web/package.json" />
-      <path value="$PROJECT_DIR$/web/twts_141_PurpleAdmin/package.json" />
-      <path value="$PROJECT_DIR$/web/twts_141_PurpleAdmin/vendors/iconfonts/mdi/package.json" />
+      <path value="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/package.json" />
+      <path value="$PROJECT_DIR$/web/temp/twts_141_PurpleAdmin/vendors/iconfonts/mdi/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -233,35 +399,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deviceManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deviceManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="twts_141_PurpleAdmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deviceManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deviceManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="twts_141_PurpleAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deviceManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deviceManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="twts_141_PurpleAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deviceManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deviceManage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="twts_141_PurpleAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-features" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,20 +455,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15384000" />
+    <option name="totallyTimeSpent" value="15636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27083334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2706131" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6714443" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.052332196" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -375,46 +512,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/buttons.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="942">
-          <caret line="525" column="32" lean-forward="true" selection-start-line="525" selection-start-column="32" selection-end-line="525" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="291" column="7" lean-forward="true" selection-start-line="291" selection-start-column="7" selection-end-line="291" selection-end-column="27" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/buttons.html" />
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html" />
     <entry file="file://$PROJECT_DIR$/web/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -443,24 +547,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/styles/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="181" selection-start-line="181" selection-end-line="652" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html" />
     <entry file="file://$PROJECT_DIR$/web/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -482,11 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -497,22 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/package.json" />
     <entry file="file://$PROJECT_DIR$/web/vendors/js/vendor.bundle.base.js" />
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1620" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-729" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/dashboard.js" />
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/js/chart.js" />
     <entry file="file://$PROJECT_DIR$/web/vendors/css/maps/style.css.map" />
     <entry file="file://$PROJECT_DIR$/web/vendors/css/style.css" />
     <entry file="file://$PROJECT_DIR$/web/bower.json">
@@ -556,13 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="942">
-          <caret line="525" column="32" lean-forward="true" selection-start-line="525" selection-start-column="32" selection-end-line="525" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/index.html" />
     <entry file="file://$PROJECT_DIR$/web/app/scripts/controllers/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -573,37 +643,8 @@
     <entry file="file://$PROJECT_DIR$/web/app/views/about.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="290" column="16" lean-forward="true" selection-start-line="290" selection-start-column="16" selection-end-line="290" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="298" column="98" lean-forward="true" selection-start-line="298" selection-start-column="19" selection-end-line="298" selection-end-column="98" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/typography.html" />
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/ui-features/buttons.html" />
     <entry file="file://$PROJECT_DIR$/web/app/views/lab.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -644,21 +685,12 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="8147" column="2" lean-forward="true" selection-start-line="8147" selection-start-column="2" selection-end-line="8147" selection-end-column="2" />
+        <state relative-caret-position="219618">
+          <caret line="8147" column="2" selection-start-line="8147" selection-start-column="2" selection-end-line="8147" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/forms/basic_elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="317" column="54" lean-forward="true" selection-start-line="317" selection-start-column="54" selection-end-line="317" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/twts_141_PurpleAdmin/pages/forms/basic_elements.html" />
     <entry file="file://$PROJECT_DIR$/web/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -684,9 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,21 +723,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="n#div#0;n#row#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
         </state>
       </provider>
     </entry>
