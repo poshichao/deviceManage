@@ -26,21 +26,23 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>用户类型</th>
-                        <th>用户姓名</th>
-                        <th>用户名</th>
+                        <th>预约部门</th>
+                        <th>预约设备</th>
+                        <th>预约开始时间</th>
+                        <th>预约结束时间</th>
                         <th>手机号码</th>
-                        <th>操作</th>
+                        <th>预约状态</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr ng-repeat="reserve in data.reserves">
+                        <td>{{$index+1}}</td>
+                        <td>{{reserve.device.laboratory}}</td>
+                        <td>{{reserve.device}}</td>
+                        <td>{{reserve.startTime}}</td>
+                        <td>{{reserve.endTime}}</td>
+                        <td>{{reserve.phone}}</td>
+                        <td>{{reserve.status}}</td>
                     </tr>
                     </tbody>
                 </table>
