@@ -1,4 +1,4 @@
-package com.experience.deviceManage.DataInit;
+package com.experience.deviceManage.dataInit;
 
 import com.experience.deviceManage.entity.Device;
 import com.experience.deviceManage.entity.Laboratory;
