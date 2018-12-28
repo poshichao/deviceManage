@@ -1,4 +1,4 @@
-package com.experience.deviceManage.DataInit;
+package com.experience.deviceManage.dataInit;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationListener;
