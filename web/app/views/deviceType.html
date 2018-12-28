@@ -1,0 +1,22 @@
+<div class="page-header">
+    <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-home"></i>
+              </span>
+        设备类别浏览
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>Overview
+                <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="row icons-list">
+    <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="type in deviceTypes">
+        <i class="mdi mdi-access-point"></i>{{type}}
+    </div>
+</div>
+

@@ -33,6 +33,10 @@ angular
                 templateUrl: 'views/login.html',
                 controller: 'LoginCtrl'
             })
+            .when('/deviceType', {
+                templateUrl: 'views/deviceType.html',
+                controller: 'DeviceTypeCtrl'
+            })
             .when('/device', {
                 templateUrl: 'views/device.html',
                 controller: 'DeviceCtrl'
