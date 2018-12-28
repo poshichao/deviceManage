@@ -1,5 +1,5 @@
 angular.module('testApp')
-    .controller('ReserveCtrl', function ($scope, device, $routeParams) {
+    .controller('ReserveCtrl', function ($scope, device, reserve, $routeParams) {
         var self = this;
 
         $scope.reserve = {};
@@ -11,18 +11,21 @@ angular.module('testApp')
             });
         };
 
-        $scope.submitReserve = function (reserve) {
-            $scope.reserve = angular.copy(reserve);
-            let bd = new Date(reserve.begin_time).getTime() / 1000;
-            let ed = new Date(reserve.end_time).getTime() / 1000;
+        $scope.submitReserve = function (data) {
+            $scope.reserve = angular.copy(data);
+            let bd = new Date(reserve.startTime).getTime() / 1000;
+            let ed = new Date(reserve.endTime).getTime() / 1000;
 
-            let post_data = {
-                begin_time: bd,
-                end_time: ed,
-                mobile: reserve.mobile
+            let postData = {
+                startTime: bd,
+                endTime: ed,
+                phone: reserve.phone
             };
+            console.log(postData);
+            reserve.submit(postData, function (res) {
+                console.log(res);
+            });
 
-            console.log(post_data);
         };
 
         self.init();

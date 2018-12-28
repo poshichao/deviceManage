@@ -5,7 +5,7 @@ angular.module('testApp')
         self.init = function () {
             deviceType.getAll(function (data) {
                 console.log(data);
-                $scope.deviceTypes = data;
+                $scope.deviceTypes = data.deviceTypes;
             });
         };
 
