@@ -1,6 +1,5 @@
 package com.experience.deviceManage.repository;
 
-import com.experience.deviceManage.entity.InlineDevice;
 import com.experience.deviceManage.entity.InlineLaboratory;
 import com.experience.deviceManage.entity.Laboratory;
 import org.springframework.data.repository.CrudRepository;
