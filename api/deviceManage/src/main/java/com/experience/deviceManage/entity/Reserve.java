@@ -1,14 +1,12 @@
 package com.experience.deviceManage.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * 预约
  */
+@Entity
 public class Reserve {
     private final static Byte UNEXAMINE = 0;    // 未处理
     private final static Byte AGREE = 1;        // 同意，但未完成
@@ -21,6 +19,7 @@ public class Reserve {
     private Date endTime;   // 结束时间
     private String phone;   // 预留手机号
     private Byte status = UNEXAMINE;    // 预约状态
+    private String comment; // 评价
 
     @ManyToOne
     private Device device;
@@ -63,5 +62,13 @@ public class Reserve {
 
     public void setDevice(Device device) {
         this.device = device;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 }
