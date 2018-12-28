@@ -2,20 +2,32 @@ angular.module('testApp')
     .service('reserve', function ($http) {
         var self = this;
 
+        var host = 'http://localhost:8080';
         self.submit = function (postData, callback) {
-            var url = 'http://localhost:8080/reserve';
-
+            var url = host + '/reserve';
             $http.post(url, postData)
-                .then(function success(response) {
+                .then(function success() {
                     if (callback) {
-                        callback(response.data);
+                        callback("ok");
                     }
-                }, function error() {
-                    console.log(error);
+                }, function error(response) {
+                    console.log(response);
                 });
         };
 
+        self.getAll = function (callback) {
+            var url = host + '/reserve';
+            $http.get(url)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data._embedded);
+                    }
+                }, function error(response) {
+                    console.log(response);
+                });
+        };
         return {
-            submit: self.submit
+            submit: self.submit,
+            getAll: self.getAll
         };
     });
