@@ -35,12 +35,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="reserve in data.reserves">
+                    <tr ng-repeat="reserve in reserves">
                         <td>{{$index+1}}</td>
                         <td>{{reserve.device.laboratory}}</td>
                         <td>{{reserve.device}}</td>
-                        <td>{{reserve.startTime}}</td>
-                        <td>{{reserve.endTime}}</td>
+                        <td>{{reserve.startTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
+                        <td>{{reserve.endTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
                         <td>{{reserve.phone}}</td>
                         <td>{{reserve.status}}</td>
                     </tr>

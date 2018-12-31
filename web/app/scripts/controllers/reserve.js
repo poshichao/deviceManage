@@ -1,25 +1,35 @@
 angular.module('testApp')
-    .controller('ReserveCtrl', function ($scope) {
+    .controller('ReserveCtrl', function ($scope, device, reserve, $routeParams, $location) {
         var self = this;
 
         $scope.reserve = {};
 
         self.init = function () {
-            $scope.data = {};
+
+            device.getById($routeParams.deviceId, function (data) {
+                $scope.device = data;
+            });
         };
 
-        $scope.submitReserve = function (reserve) {
-            $scope.reserve = angular.copy(reserve);
-            let bd = new Date(reserve.begin_time).getTime()/1000;
-            let ed = new Date(reserve.end_time).getTime()/1000;
+        $scope.submitReserve = function (data) {
+            $scope.reserve = angular.copy(data);
+            let bd = new Date(data.startTime).getTime();
+            let ed = new Date(data.endTime).getTime();
 
-            let post_data = {
-                begin_time:bd,
-                end_time:ed,
-                mobile:reserve.mobile
+            let postData = {
+                startTime: bd,
+                endTime: ed,
+                phone: data.phone
             };
 
-            console.log(post_data);
+            console.log(postData);
+            reserve.submit(postData, function (msg) {
+                console.log(msg);
+                if (msg === 'ok') {
+                    $location.path('/myReserve');
+                }
+            });
+
         };
 
         self.init();

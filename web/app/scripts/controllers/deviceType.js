@@ -1,11 +1,11 @@
 angular.module('testApp')
-    .controller('MyReserveCtrl', function ($scope, reserve) {
+    .controller('DeviceTypeCtrl', function ($scope, deviceType) {
         var self = this;
 
         self.init = function () {
-            reserve.getAll(function (data) {
+            deviceType.getAll(function (data) {
                 console.log(data);
-                $scope.reserves = data.reserves;
+                $scope.deviceTypes = data.deviceTypes;
             });
         };
 

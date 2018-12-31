@@ -1,18 +1,11 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name testApp.laboratory
- * @description
- * # laboratory
- * Service in the testApp.
- */
 angular.module('testApp')
-    .service('laboratory', function ($http) {
+    .service('deviceType', function ($http) {
         var self = this;
 
         self.getAll = function (callback) {
-            var url = 'http://localhost:8080/laboratory';
+            var url = 'http://localhost:8080/deviceType';
 
             $http.get(url)
                 .then(function success(response) {

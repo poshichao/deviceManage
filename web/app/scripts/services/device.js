@@ -8,24 +8,38 @@
  * Service in the testApp.
  */
 angular.module('testApp')
-    .service('device', function($http) {
-    	var self = this;
+    .service('device', function ($http) {
+        var self = this;
 
-    	// 获取所有仪器
-    	self.getAll = function(callback) {
-    		var url = "http://localhost:8080/device";
-    		$http.get(url)
-    			.then(function success(responce) {
-    				console.log(responce);
-    				if (callback) {
-    					callback(responce.data._embedded);
-    				}
-    			}, function error() {
-    				console.log('error');
-    			});
-    	};
+        var host = "http://localhost:8080";
+        // 获取所有仪器
+        self.getAll = function (callback) {
+            var url = host + "/device";
+            $http.get(url)
+                .then(function success(response) {
+                    console.log(response);
+                    if (callback) {
+                        callback(response.data._embedded);
+                    }
+                }, function error() {
+                    console.log('error');
+                });
+        };
 
-    	return {
-    		getAll: self.getAll
-    	};
+        self.getById = function (id, callback) {
+            var url = host + "/device/" + id;
+            $http.get(url)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data);
+                    }
+                }, function error() {
+                    console.log('error');
+                });
+        };
+
+        return {
+            getAll: self.getAll,
+            getById: self.getById
+        };
     });
