@@ -17,6 +17,10 @@ public class RegistrationRequest {
     private Long id;
 
     private Byte status = UNPROCESSED;    // 状态,默认未受理
+    private String name;                    // 用户名
+    private String password;                // 密码
+    private String eMail;                   // 邮件
+    private Boolean isGeneral;              // 是否为普通用户
 
     public Byte getStatus() {
         return status;
@@ -24,5 +28,37 @@ public class RegistrationRequest {
 
     public void setStatus(Byte status) {
         this.status = status;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String geteMail() {
+        return eMail;
+    }
+
+    public void seteMail(String eMail) {
+        this.eMail = eMail;
+    }
+
+    public Boolean getGeneral() {
+        return isGeneral;
+    }
+
+    public void setGeneral(Boolean general) {
+        isGeneral = general;
     }
 }
