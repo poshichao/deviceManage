@@ -13,7 +13,7 @@ public class GeneralUser {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;        // 姓名
+    private String name;        // 用户名
     private String email;       // 邮箱
     private String password;    // 密码
 

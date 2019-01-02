@@ -27,7 +27,7 @@ public class UserDataInit extends BaseDataInitDataListener {
 
     public void addGeneralUser() {
         GeneralUser generalUser = new GeneralUser();
-        generalUser.setName("测试普通用户");
+        generalUser.setName("testUser1");
         generalUser.setEmail("123@456.com");
         generalUser.setPassword("123123");
         generalUserRepository.save(generalUser);
@@ -35,7 +35,7 @@ public class UserDataInit extends BaseDataInitDataListener {
 
     public void addLaboratoryUser() {
         LaboratoryUser laboratoryUser = new LaboratoryUser();
-        laboratoryUser.setName("测试实验室用户");
+        laboratoryUser.setName("testUser2");
         laboratoryUser.setEmail("123@456.com");
         laboratoryUser.setPassword("123123");
         laboratoryUserRepository.save(laboratoryUser);
