@@ -4,7 +4,7 @@ angular.module('testApp')
 
         self.init = function () {
             $scope.data = {
-                reserves: []
+
             };
         };
 

@@ -49,6 +49,10 @@ angular
                 templateUrl: 'views/lab.html',
                 controller: 'LabCtrl'
             })
+            .when('/search', {
+                templateUrl: 'views/search.html',
+                controller: 'SearchCtrl'
+            })
             .when('/myReserve', {
                 templateUrl: 'views/myReserve.html',
                 controller: 'MyReserveCtrl'
