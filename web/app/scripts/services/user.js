@@ -27,9 +27,9 @@ angular.module('testApp')
 
         self.deleteById = function (userType, id, callback) {
             $http.delete(host + '/' + userType + '/' + id)
-                .then(function success(response) {
+                .then(function success() {
                     if (callback) {
-                        callback(response);
+                        callback("ok");
                     }
                 }, function error() {
                     console.log(error);
