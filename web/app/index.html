@@ -86,6 +86,7 @@
                 </a>
             </li>
 
+            <!--浏览-->
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" data-target="#look-through" href="" aria-expanded="false"
                    aria-controls="ui-basic">
@@ -103,13 +104,23 @@
                 </div>
             </li>
 
+            <!--仪器管理-->
             <li class="nav-item">
-                <a class="nav-link" href="/#!/user">
-                    <span class="menu-title">用户管理</span>
-                    <i class="mdi mdi-contacts menu-icon"></i>
+                <a class="nav-link" data-toggle="collapse" data-target="#device" href="" aria-expanded="false"
+                   aria-controls="ui-basic">
+                    <span class="menu-title">仪器管理</span>
+                    <i class="menu-arrow"></i>
+                    <i class="mdi mdi-crosshairs-gps menu-icon"></i>
                 </a>
+                <div class="collapse" id="device">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"><a class="nav-link" href="/#!/submitDevice">仪器信息填报</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/submitDevice">仪器信息管理</a></li>
+                    </ul>
+                </div>
             </li>
 
+            <!--预约管理-->
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" data-target="#reserve" href="" aria-expanded="false"
                    aria-controls="ui-basic">
@@ -122,8 +133,18 @@
                         <li class="nav-item"><a class="nav-link" href="/#!/myReserve">我的预约</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">审核预约</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">预约评价</a>
+                        </li>
                     </ul>
                 </div>
+            </li>
+
+            <!--用户管理-->
+            <li class="nav-item">
+                <a class="nav-link" href="/#!/user">
+                    <span class="menu-title">用户管理</span>
+                    <i class="mdi mdi-contacts menu-icon"></i>
+                </a>
             </li>
 
         </ul>
@@ -169,17 +190,21 @@
     <script src="scripts/controllers/deviceType.js"></script>
     <script src="scripts/controllers/device.js"></script>
     <script src="scripts/controllers/reserve.js"></script>
-    <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/controllers/user.js"></script>
     <script src="scripts/controllers/myReserve.js"></script>
     <script src="scripts/controllers/examineReserve.js"></script>
     <script src="scripts/controllers/search.js"></script>
+    <script src="scripts/controllers/user.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/register.js"></script>
+
     <script src="scripts/services/laboratory.js"></script>
     <script src="scripts/services/deviceType.js"></script>
     <script src="scripts/services/device.js"></script>
     <script src="scripts/services/reserve.js"></script>
     <script src="scripts/services/search.js"></script>
     <script src="scripts/services/user.js"></script>
+    <script src="scripts/services/login.js"></script>
+    <script src="scripts/services/register.js"></script>
 
     <!-- endbower -->
 
