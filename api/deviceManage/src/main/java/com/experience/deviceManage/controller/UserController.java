@@ -27,4 +27,9 @@ public class UserController {
     public void review(@PathVariable Long id, @RequestBody RegistrationRequest registrationRequest) {
         userService.review(id, registrationRequest);
     }
+
+    @PostMapping("/login")
+    public String login(@RequestParam String name, @RequestParam String password) {
+        return userService.login(name, password);
+    }
 }

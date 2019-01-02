@@ -63,4 +63,25 @@ public class UserServiceImpl implements UserService {
         registrationRequestRepository.save(oldRegistrationRequest);
     }
 
+    @Override
+    public String login(String name, String password) {
+        GeneralUser generalUser = generalUserRepository.findByName(name);
+        if (null == generalUser) {
+            LaboratoryUser laboratoryUser = laboratoryUserRepository.findByName(name);
+            if (null != laboratoryUser) {
+                if (laboratoryUser.getPassword() == password) {
+                    return "success";
+                }
+            }
+
+            return "error";
+        } else {
+            if (generalUser.getPassword() == password) {
+                return  "success";
+            }
+
+            return "error";
+        }
+    }
+
 }

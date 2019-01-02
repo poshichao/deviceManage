@@ -10,4 +10,6 @@ public interface UserService {
     void laboratoryRegister(LaboratoryUser laboratoryUser);
 
     void review(Long id, RegistrationRequest registrationRequest);
+
+    String login(String name, String password);
 }
