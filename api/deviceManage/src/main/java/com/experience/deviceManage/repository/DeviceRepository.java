@@ -13,6 +13,6 @@ import java.util.List;
 
 @RepositoryRestResource(path = "/device", excerptProjection = InlineDevice.class)
 public interface DeviceRepository extends CrudRepository<Device, Long> {
-
-    List<Device> findAllByLaboratory_Id(@Param("id")Long id);
+    @RestResource(path = "laboratoryAndDeviceType", rel = "laboratoryAndDeviceType")
+    List<Device> findAllByLaboratory_IdAndDeviceType_Id(@Param("id")Long id, @Param("deviceTypeId") Long deviceTypeId);
 }
