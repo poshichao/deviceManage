@@ -13,7 +13,7 @@ public class DeviceServiceImpl implements DeviceService {
     private DeviceRepository deviceRepository;
 
     @Override
-    public List<Device> getAllByLaboratoryId(Long id) {
-        return deviceRepository.findAllByLaboratory_Id(id);
+    public List<Device> getAllByLaboratoryIdAndDeviceTypeId(Long id, Long deviceTypeId) {
+        return deviceRepository.findAllByLaboratory_IdAndDeviceType_Id(id, deviceTypeId);
     }
 }
