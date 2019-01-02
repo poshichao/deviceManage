@@ -61,9 +61,9 @@ angular
                 templateUrl: 'views/examineReserve.html',
                 controller: 'ExamineReserveCtrl'
             })
-            .when('/users', {
-                templateUrl: 'views/users.html',
-                controller: 'UsersCtrl'
+            .when('/user', {
+                templateUrl: 'views/user.html',
+                controller: 'UserCtrl'
             })
             .otherwise({
                 redirectTo: '/'

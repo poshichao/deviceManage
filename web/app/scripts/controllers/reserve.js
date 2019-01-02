@@ -17,6 +17,7 @@ angular.module('testApp')
             let ed = new Date(data.endTime).getTime();
 
             let postData = {
+
                 startTime: bd,
                 endTime: ed,
                 phone: data.phone
