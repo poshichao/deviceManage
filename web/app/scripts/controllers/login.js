@@ -41,6 +41,13 @@ angular.module('testApp')
 
         };
 
+        self.logout = function() {
+            $rootScope.isLogged = false;
+            $rootScope.user = null;
+            $location.url('main');
+        };
+
 
         self.init();
+        $rootScope.logout = self.logout;
     });
