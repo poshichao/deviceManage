@@ -2,9 +2,11 @@ package com.experience.deviceManage.service;
 
 import com.experience.deviceManage.entity.GeneralUser;
 import com.experience.deviceManage.entity.LaboratoryUser;
+import com.experience.deviceManage.entity.ManageUser;
 import com.experience.deviceManage.entity.RegistrationRequest;
 import com.experience.deviceManage.repository.GeneralUserRepository;
 import com.experience.deviceManage.repository.LaboratoryUserRepository;
+import com.experience.deviceManage.repository.ManageUserRepository;
 import com.experience.deviceManage.repository.RegistrationRequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,23 +54,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public String login(String name, String password) {
+
         GeneralUser generalUser = generalUserRepository.findByName(name);
         if (null == generalUser) {
             LaboratoryUser laboratoryUser = laboratoryUserRepository.findByName(name);
             if (null != laboratoryUser) {
                 if (laboratoryUser.getPassword().equals(password)) {
-                    return "laboratory";
+                    return String.format("{\"msg\":\"ok\",\"user\":{\"userType\":\"%s\",\"id\":%d}}", "laboratory", laboratoryUser.getId());
                 }
+            }else{
             }
-
-            return "error";
         } else {
             if (generalUser.getPassword().equals(password)) {
-                return  "general";
+                return String.format("{\"msg\":\"ok\",\"user\":{\"userType\":\"%s\",\"id\":%d}}", "general", generalUser.getId());
             }
-
-            return "error";
         }
+        return String.format("{\"msg\":\"%s\"}", "error");
     }
 
 }

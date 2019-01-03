@@ -17,6 +17,14 @@ public class LaboratoryUser {
     @ManyToOne
     private Laboratory laboratory;  // 实验室
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }

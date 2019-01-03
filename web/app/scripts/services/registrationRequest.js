@@ -32,14 +32,15 @@ angular.module('testApp')
             self.getById(requestId, function (request) {
                 request.status = status;
                 console.log(request);
-                $http.put(url + '/' + requestId, request)
-                    .then(function success(response) {
-                        console.log(response);
+                $http.put(host + '/user/review/' + requestId, request)
+                    .then(function success() {
                         if (callback) {
-                            callback(response.data);
+                            callback('ok');
                         }
                     }, function error() {
-                        console.log(error);
+                        if (callback) {
+                            callback('审核错误');
+                        }
                     });
             });
         };

@@ -28,6 +28,7 @@ angular.module('testApp')
             $http.get(url)
                 .then(function success(response) {
                     if (callback) {
+                        response.data.id = parseInt(laboratoryId);
                         callback(response.data);
                     }
                 }, function error() {

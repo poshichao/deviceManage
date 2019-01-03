@@ -72,15 +72,16 @@
                     </div>
 
                     <div class="nav-profile-text d-flex flex-column" ng-if="isLogged">
-                        <span class="font-weight-bold mb-2">David Grey. H</span>
-                        <span class="text-secondary text-small">Project Manager</span>
+                        <span class="font-weight-bold mb-2">用户{{user.id}}</span>
+                        <span class="text-secondary text-small">{{user.userType}}</span>
                     </div>
 
                     <div class="nav-profile-text d-flex flex-row" ng-if="!isLogged">
                         <a class="font-weight-bold mb-2 text-gray" href="/#!/login">登录</a>/
                         <a class="font-weight-bold mb-2 text-gray" href="/#!/register">注册</a>
                     </div>
-                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge" ng-if="isLogged"></i>
+                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                       ng-if="isLogged && user.userType == 'laboratory'"></i>
                 </div>
             </li>
             <!--其他列表项-->

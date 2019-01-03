@@ -33,7 +33,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="request in registrationRequests">
+                    <tr ng-repeat="request in registrationRequests" ng-if="request.status == 0">
                         <td>{{$index+1}}</td>
                         <td>{{request.name}}</td>
                         <td>{{request.password}}</td>
