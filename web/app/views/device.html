@@ -1,4 +1,66 @@
-<div class="page-header">
+<div class="page-header" ng-if="isSearch">
+    <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-home"></i>
+              </span>
+        仪器高级搜索
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>Overview
+                <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+<div class="row" ng-if="isSearch">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">高级搜索</h4>
+                <p class="card-description"></p>
+                <div class="form-group row">
+                    <label for="select-lab" class="col-sm-3 col-form-label">仪器所属单位</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="select-lab" ng-model="search.laboratoryId">
+                            <option value='' disabled selected style='display:none;'>请选择仪器所属单位</option>
+                            <option ng-repeat="lab in laboratories" value="{{lab.id}}">{{lab.name}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="select-deviceType" class="col-sm-3 col-form-label">仪器所属类别</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="select-deviceType" ng-model="search.deviceTypeId">
+                            <option value='' disabled selected style='display:none;'>请选择仪器所属类别</option>
+                            <option ng-repeat="type in deviceTypes" value="{{type.id}}">{{type.name}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="input-deviceName" class="col-sm-3 col-form-label">仪器名称</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="请在此输入仪器名称关键字"
+                                   id="input-deviceName" ng-model="search.name">
+                            <div class="input-group-append">
+                                <button class="btn btn-sm btn-gradient-primary" type="button" ng-click="searchDevice()">
+                                    搜索
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-header" ng-if="!isSearch">
     <h3 class="page-title">
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
                 <i class="mdi mdi-home"></i>
@@ -16,9 +78,9 @@
 
 </div>
 
-<div class="row">
-    <div class="col-md-4 grid-margin stretch-card" ng-repeat="device in devices" ng-if="device.status == 1">
 
+<div class="row" ng-if="!isSearch">
+    <div class="col-md-4 grid-margin stretch-card" ng-repeat="device in devices" ng-if="device.status == 1">
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">{{device.name}}</h1>
