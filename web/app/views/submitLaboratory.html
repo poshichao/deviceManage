@@ -1,0 +1,50 @@
+<div class="page-header">
+    <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-home"></i>
+              </span>
+        添加单位
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>Overview
+                <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">单位信息</h4>
+                <form class="forms-sample">
+                    <div class="form-group row">
+                        <label for="device-type" class="col-sm-3 col-form-label">单位名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="device-type"
+                                   placeholder="请输入单位名称"
+                                   ng-model="laboratory.name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="device-introduction" class="col-sm-3 col-form-label">单位简介</label>
+                        <div class="col-sm-9">
+                            <textarea rows="5" class="form-control" id="device-introduction"
+                                      placeholder="请输入单位简介"
+                                      ng-model="laboratory.introduction"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient-primary mr-2" ng-click="submitLaboratory()">提交
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

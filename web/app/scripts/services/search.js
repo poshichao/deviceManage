@@ -3,7 +3,7 @@ angular.module('testApp')
         var self = this;
 
         self.search = function (callback) {
-            var url = 'http://localhost:8080/laboratory';
+            var url = 'http://localhost:8080/search';
 
             $http.get(url)
                 .then(function success(response) {

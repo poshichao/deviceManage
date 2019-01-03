@@ -26,30 +26,27 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>预约部门</th>
-                        <th>预约设备</th>
-                        <th>预约开始时间</th>
-                        <th>预约结束时间</th>
+                        <th>注册类型</th>
                         <th>用户名</th>
-                        <th>手机号码</th>
+                        <th>密码</th>
+                        <th>邮箱账号</th>
                         <th>审核操作</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="reserve in reserves">
+                    <tr ng-repeat="request in registrationRequests">
                         <td>{{$index+1}}</td>
-                        <td>{{reserve.device.laboratory}}</td>
-                        <td>{{reserve.device}}</td>
-                        <td>{{reserve.startTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
-                        <td>{{reserve.endTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
-                        <td>{{}}</td>
-                        <td>{{reserve.phone}}</td>
+                        <td ng-if="request.general">普通用户</td>
+                        <td ng-if="!request.general">管理部门</td>
+                        <td>{{request.name}}</td>
+                        <td>{{request.password}}</td>
+                        <td>{{request.eMail}}</td>
                         <td class="text-center">
                             <button type="button" class="btn btn-success btn-md"
-                                    ng-click="examineReserve(reserve.id,true)">通过
+                                    ng-click="examineRegister(1,true)">通过
                             </button>
                             <button type="button" class="btn btn-secondary btn-md"
-                                    ng-click="examineReserve(reserve.id,false)">不通过
+                                    ng-click="examineRegister(request.id,false)">不通过
                             </button>
                         </td>
                     </tr>

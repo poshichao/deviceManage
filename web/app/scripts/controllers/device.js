@@ -3,8 +3,9 @@ angular.module('testApp')
         var self = this;
 
         self.init = function () {
-            device.getAll(function(data) {
-                $scope.data = data;
+            device.getAll(function (res) {
+                console.log(res);
+                $scope.devices = res.devices;
             });
         };
 
