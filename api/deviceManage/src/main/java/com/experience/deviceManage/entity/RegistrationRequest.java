@@ -20,7 +20,6 @@ public class RegistrationRequest {
     private String name;                    // 用户名
     private String password;                // 密码
     private String eMail;                   // 邮件
-    private Boolean isGeneral;              // 是否为普通用户
 
     public Byte getStatus() {
         return status;
@@ -54,11 +53,4 @@ public class RegistrationRequest {
         this.eMail = eMail;
     }
 
-    public Boolean getGeneral() {
-        return isGeneral;
-    }
-
-    public void setGeneral(Boolean general) {
-        isGeneral = general;
-    }
 }
