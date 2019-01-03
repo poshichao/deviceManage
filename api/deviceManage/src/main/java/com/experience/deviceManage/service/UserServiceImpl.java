@@ -19,6 +19,8 @@ public class UserServiceImpl implements UserService {
     private LaboratoryUserRepository laboratoryUserRepository;
     @Autowired
     private RegistrationRequestRepository registrationRequestRepository;
+    @Autowired
+    private ManageUserRepository manageUserRepository;
 
     @Override
     public void generalRegister(GeneralUser generalUser) {
@@ -63,7 +65,10 @@ public class UserServiceImpl implements UserService {
                     return String.format("{\"user\":{\"userType\":\"%s\",\"id\":%d}}", "laboratory", laboratoryUser.getId());
                 }
             }else{
-//                ManageUser manageUser = ManageUserRepository.findByName(name);
+                ManageUser manageUser = manageUserRepository.findByName(name);
+                if (null != manageUser) {
+                    return String.format("{\"user\":{\"userType\":\"%s\",\"id\":%d}}", "manage", manageUser.getId());
+                }
             }
         } else {
             if (generalUser.getPassword().equals(password)) {
