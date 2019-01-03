@@ -1,23 +1,12 @@
 angular.module('testApp')
-    .controller('SearchCtrl', function ($scope, laboratory, deviceType) {
+    .controller('SearchCtrl', function ($location, $rootScope) {
         var self = this;
 
         self.init = function () {
-            $scope.search = {
-                laboratoryId: '',
-                deviceTypeId: '',
-                deviceName: ''
-            };
+            $rootScope.isSearch = true;
+            $location.path('device');
+        };
 
-            laboratory.getAll(function (res) {
-                $scope.laboratories = res.laboratories;
-            });
-            deviceType.getAll(function (res) {
-                $scope.deviceTypes = res.deviceTypes;
-            });
-        };
-        $scope.searchDevice = function () {
-            console.log($scope.search);
-        };
+        
         self.init();
     });

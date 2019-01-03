@@ -25,8 +25,33 @@ angular.module('testApp')
                 });
         };
 
-        self.search = function (params, callback) {
-            $http.get(url + '?')
+        self.searchLaboratory = function (laboratoryId, callback) {
+            var searchUrl = url + '/search/laboratory?laboratoryId=' + laboratoryId;
+            $http.get(searchUrl)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data._embedded);
+                    }
+                }, function error() {
+                    console.log('error');
+                });
+        };
+
+        self.searchDeviceType = function (deviceTypeId, callback) {
+            var searchUrl = url + '/search/deviceType?deviceTypeId=' + deviceTypeId;
+            $http.get(searchUrl)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data._embedded);
+                    }
+                }, function error() {
+                    console.log('error');
+                });
+        };
+
+        self.searchName = function (name, callback) {
+            var searchUrl = url + '/search/name?name=' + name;
+            $http.get(searchUrl)
                 .then(function success(response) {
                     if (callback) {
                         callback(response.data._embedded);
@@ -78,9 +103,11 @@ angular.module('testApp')
 
         return {
             getAll: self.getAll,
-            search: self.search,
             getById: self.getById,
             add: self.add,
-            deleteById: self.deleteById
+            deleteById: self.deleteById,
+            searchLaboratory: self.searchLaboratory,
+            searchDeviceType: self.searchDeviceType,
+            searchName: self.searchName
         };
     });

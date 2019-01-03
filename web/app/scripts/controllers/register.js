@@ -45,10 +45,11 @@ angular.module('testApp')
                 };
 
                 if ($scope.register.userType === 'laboratory') {
-                    register.laboratory = JSON.parse($scope.register.laboratory);
+                    $scope.register.laboratory = JSON.parse($scope.register.laboratory);
                 }
+                console.log($scope.register);
 
-                user.register($scope.register.userType, register, function (msg) {
+                user.register($scope.register.userType, $scope.register, function (msg) {
                     if (msg === 'ok') {
                         self.init();
                         if ($scope.register.userType === 'general') {
