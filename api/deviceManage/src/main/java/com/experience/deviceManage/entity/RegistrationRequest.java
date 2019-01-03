@@ -19,7 +19,7 @@ public class RegistrationRequest {
     private Byte status = UNPROCESSED;    // 状态,默认未受理
     private String name;                    // 用户名
     private String password;                // 密码
-    private String eMail;                   // 邮件
+    private String email;                   // 邮件
 
     public Byte getStatus() {
         return status;
@@ -45,12 +45,12 @@ public class RegistrationRequest {
         this.password = password;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }

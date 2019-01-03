@@ -8,6 +8,6 @@ public interface InlineRegistrationRequest {
     Byte getStatus();
     String getName();
     String getPassword();
-    String geteMail();
+    String getEmail();
     Boolean getGeneral();
 }
