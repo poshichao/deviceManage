@@ -1,9 +1,6 @@
 package com.experience.deviceManage.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * 实验室用户
@@ -16,6 +13,9 @@ public class LaboratoryUser {
     private String name;        // 姓名
     private String email;       // 邮箱
     private String password;    // 密码
+
+    @ManyToOne
+    private Laboratory laboratory;  // 实验室
 
     public String getName() {
         return name;
@@ -39,5 +39,13 @@ public class LaboratoryUser {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Laboratory getLaboratory() {
+        return laboratory;
+    }
+
+    public void setLaboratory(Laboratory laboratory) {
+        this.laboratory = laboratory;
     }
 }

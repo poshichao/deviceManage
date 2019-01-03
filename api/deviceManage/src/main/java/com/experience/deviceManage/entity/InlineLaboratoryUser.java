@@ -8,4 +8,5 @@ public interface InlineLaboratoryUser {
     String getName();
     String getEmail();
     String getPassword();
+    Laboratory getLaboratory();
 }
