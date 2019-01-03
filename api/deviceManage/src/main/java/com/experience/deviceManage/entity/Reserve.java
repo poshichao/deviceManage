@@ -24,6 +24,9 @@ public class Reserve {
     @ManyToOne
     private Device device;
 
+    @ManyToOne
+    private GeneralUser generalUser;
+
     public Long getId() {
         return id;
     }
@@ -74,5 +77,13 @@ public class Reserve {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public GeneralUser getGeneralUser() {
+        return generalUser;
+    }
+
+    public void setGeneralUser(GeneralUser generalUser) {
+        this.generalUser = generalUser;
     }
 }

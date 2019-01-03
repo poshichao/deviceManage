@@ -13,4 +13,5 @@ public interface InlineReserve {
     Byte getStatus();
     Device getDevice();
     String getComment();
+    GeneralUser getGeneralUser();
 }
