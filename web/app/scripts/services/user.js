@@ -50,6 +50,7 @@ angular.module('testApp')
                 });
         };
         self.register = function (userType, register, callback) {
+
             $http.post(host + '/user/' + userType, register)
                 .then(function success() {
                     if (callback) {

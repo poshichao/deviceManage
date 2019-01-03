@@ -1,0 +1,43 @@
+<div class="page-header">
+    <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-home"></i>
+              </span>
+        评价预约
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>Overview
+                <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">评价预约</h4>
+
+                <form class="forms-sample">
+
+                    <div class="form-group">
+                        <textarea rows="5" class="form-control" id="device-introduction"
+                                  placeholder="请填写您对本次预约的评价，主管部门将会看到您的评价"
+                                  ng-model="comment"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient-primary mr-2" ng-click="commentReserve()">提交
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

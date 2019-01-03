@@ -63,20 +63,57 @@ angular.module('testApp')
 
         };
 
-        self.remark = function (reserve, callback) {
-            $http.put(url, reserve)
-                .then(function success(response) {
-                    console.log(response);
+        self.comment = function (reserveId, comment, callback) {
+            self.getById(reserveId, function (reserve) {
+                reserve.comment = comment;
+                console.log(reserve);
+                $http.put(host + '/reserve/' + reserveId, reserve)
+                    .then(function success() {
+                        if (callback) {
+                            callback('ok');
+                        }
+                    }, function error() {
+                        if (callback) {
+                            callback('评价失败');
+                        }
+                    });
+            });
+
+        };
+
+        self.finish = function (reserveId, callback) {
+            self.getById(reserveId, function (reserve) {
+                reserve.status = 2;
+                $http.put(host + '/reserve/' + reserveId, reserve)
+                    .then(function success() {
+                        if (callback) {
+                            callback('ok');
+                        }
+                    }, function error() {
+                        if (callback) {
+                            callback('完成预约错误');
+                        }
+                    });
+            });
+
+        };
+        self.deleteById = function (reserveId, callback) {
+            $http.delete(url + '/' + reserveId)
+                .then(function success() {
                     if (callback) {
+                        callback('ok');
                     }
-                }, function error(response) {
-                    console.log(response);
+                }, function error() {
+                    callback('删除失败');
                 });
         };
         return {
             submit: self.submit,
             getAll: self.getAll,
+            getById: self.getById,
             examine: self.examine,
-            remark: self.remark
+            comment: self.comment,
+            finish: self.finish,
+            deleteById: self.deleteById
         };
     });

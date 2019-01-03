@@ -7,15 +7,26 @@ angular.module('testApp')
                 $scope.devices = res.devices;
             });
         };
-        $scope.examineDevice = function (flag) {
-
+        $scope.examineDevice = function (deviceId, flag) {
             if (flag) {
                 if (confirm("确认通过审核吗")) {
-
+                    device.examine(deviceId, 1, function (msg) {
+                        if (msg === 'ok') {
+                            self.init();
+                        } else {
+                            alert(msg);
+                        }
+                    });
                 }
             } else {
                 if (confirm("确认不通过审核吗")) {
-
+                    device.examine(deviceId, -1, function (msg) {
+                        if (msg === 'ok') {
+                            self.init();
+                        } else {
+                            alert(msg);
+                        }
+                    });
                 }
             }
         };

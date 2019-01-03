@@ -1,8 +1,15 @@
 angular.module('testApp')
-    .controller('SubmitDeviceCtrl', function ($scope, deviceType, device) {
+    .controller('SubmitDeviceCtrl', function ($rootScope, $scope, $location, deviceType, device) {
         var self = this;
 
         self.init = function () {
+            if (null == $rootScope.user) {
+                alert("请先登录");
+                $location.path('login');
+            } else if ($rootScope.user.userType !== 'laboratory') {
+                alert("请使用单位账号访问本页面");
+                $location.path('main');
+            }
             $scope.device = {
                 deviceTypeId: '',
                 name: '',
@@ -21,7 +28,7 @@ angular.module('testApp')
                 var postData = {
                     name: $scope.device.name
                 };
-                device.add($scope.device.deviceTypeId, postData, function (msg) {
+                device.add($rootScope.user.id, $scope.device.deviceTypeId, postData, function (msg) {
                     console.log($scope.device);
                     if (msg === 'ok') {
                         alert("添加成功");

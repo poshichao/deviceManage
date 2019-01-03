@@ -26,7 +26,6 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>预约部门</th>
                         <th>预约设备</th>
                         <th>预约开始时间</th>
                         <th>预约结束时间</th>
@@ -38,17 +37,16 @@
                     <tbody>
                     <tr ng-repeat="reserve in reserves" ng-if="reserve.status == 0">
                         <td>{{$index+1}}</td>
-                        <td>{{reserve.device.laboratory}}</td>
-                        <td>{{reserve.device}}</td>
+                        <td>{{reserve.device.name}}</td>
                         <td>{{reserve.startTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
                         <td>{{reserve.endTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
-                        <td>{{}}</td>
+                        <td>{{reserve.generalUser && reserve.generalUser.name}}</td>
                         <td>{{reserve.phone}}</td>
                         <td class="text-center">
-                            <button type="button" class="btn btn-success btn-md"
+                            <button type="button" class="btn btn-success btn-md btn-sm"
                                     ng-click="examineReserve(reserve.id,true)">通过
                             </button>
-                            <button type="button" class="btn btn-secondary btn-md"
+                            <button type="button" class="btn btn-secondary btn-md btn-sm"
                                     ng-click="examineReserve(reserve.id,false)">不通过
                             </button>
                         </td>

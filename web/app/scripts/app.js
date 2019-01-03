@@ -65,6 +65,14 @@ angular
                 templateUrl: 'views/examineReserve.html',
                 controller: 'ExamineReserveCtrl'
             })
+            .when('/commentReserve/:reserveId', {
+                templateUrl: 'views/commentReserve.html',
+                controller: 'CommentReserveCtrl'
+            })
+            .when('/comment', {
+                templateUrl: 'views/comment.html',
+                controller: 'CommentCtrl'
+            })
             .when('/user', {
                 templateUrl: 'views/user.html',
                 controller: 'UserCtrl'
@@ -84,10 +92,6 @@ angular
             .when('/manageLaboratory', {
                 templateUrl: 'views/manageLaboratory.html',
                 controller: 'ManageLaboratoryCtrl'
-            })
-            .when('/remark', {
-                templateUrl: 'views/remark.html',
-                controller: 'RemarkCtrl'
             })
             .when('/submitDevice', {
                 templateUrl: 'views/submitDevice.html',

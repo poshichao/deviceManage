@@ -49,7 +49,7 @@ angular.module('testApp')
         };
 
 
-        self.add = function (deviceTypeId, device, callback) {
+        self.add = function (userId, deviceTypeId, device, callback) {
             device.deviceType = host + '/deviceType/' + deviceTypeId;
             $http.post(url, device)
                 .then(function success() {
@@ -63,6 +63,23 @@ angular.module('testApp')
                 });
         };
 
+        self.examine = function (deviceId, status, callback) {
+            self.getById(deviceId, function (device) {
+                device.status = status;
+                console.log(device);
+                $http.put(host + '/device/' + deviceId, device)
+                    .then(function success() {
+                        if (callback) {
+                            callback('ok');
+                        }
+                    }, function error() {
+                        if (callback) {
+                            callback('审核错误');
+                        }
+                    });
+            });
+
+        };
         self.deleteById = function (deviceId, callback) {
             $http.delete(url + '/' + deviceId)
                 .then(function success() {
@@ -81,6 +98,7 @@ angular.module('testApp')
             search: self.search,
             getById: self.getById,
             add: self.add,
+            examine: self.examine,
             deleteById: self.deleteById
         };
     });
