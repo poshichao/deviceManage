@@ -33,6 +33,7 @@ public class UserServiceImpl implements UserService {
         registrationRequest.setName(laboratoryUser.getName());
         registrationRequest.setPassword(laboratoryUser.getPassword());
         registrationRequest.setEmail(laboratoryUser.getEmail());
+        registrationRequest.setLaboratory(laboratoryUser.getLaboratory());
         registrationRequestRepository.save(registrationRequest);
     }
 
