@@ -10,12 +10,21 @@ import javax.persistence.Id;
  */
 @Entity
 public class GeneralUser {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;        // 用户名
     private String email;       // 邮箱
     private String password;    // 密码
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

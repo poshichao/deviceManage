@@ -72,15 +72,16 @@
                     </div>
 
                     <div class="nav-profile-text d-flex flex-column" ng-if="isLogged">
-                        <span class="font-weight-bold mb-2">David Grey. H</span>
-                        <span class="text-secondary text-small">Project Manager</span>
+                        <span class="font-weight-bold mb-2">用户{{user.id}}</span>
+                        <span class="text-secondary text-small">{{user.userType}}</span>
                     </div>
 
                     <div class="nav-profile-text d-flex flex-row" ng-if="!isLogged">
                         <a class="font-weight-bold mb-2 text-gray" href="/#!/login">登录</a>/
                         <a class="font-weight-bold mb-2 text-gray" href="/#!/register">注册</a>
                     </div>
-                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge" ng-if="isLogged"></i>
+                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                       ng-if="isLogged && user.userType == 'laboratory'"></i>
                 </div>
             </li>
             <!--其他列表项-->
@@ -111,7 +112,7 @@
             </li>
 
             <!--单位管理-->
-            <li class="nav-item">
+            <li class="nav-item" ng-if="user.userType == 'manage'">
                 <a class="nav-link" data-toggle="collapse" data-target="#lab" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">单位管理</span>
@@ -128,7 +129,7 @@
 
 
             <!--仪器管理-->
-            <li class="nav-item">
+            <li class="nav-item" ng-if="user.userType == 'laboratory' || user.userType == 'manage'">
                 <a class="nav-link" data-toggle="collapse" data-target="#device" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">仪器管理</span>
@@ -137,16 +138,23 @@
                 </a>
                 <div class="collapse" id="device">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"><a class="nav-link" href="/#!/manageDeviceType">仪器类别管理</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/submitDevice">仪器信息填报</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/manageDevice">仪器信息管理</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/examineDevice">仪器信息审核</a></li>
+                        <li class="nav-item" ng-if="user.userType == 'laboratory' || user.userType == 'manage'"><a
+                            class="nav-link" href="/#!/manageDeviceType">仪器类别管理</a></li>
+                        <li class="nav-item" ng-if="user.userType == 'laboratory'"><a class="nav-link"
+                                                                                      href="/#!/submitDevice">仪器信息填报</a>
+                        </li>
+                        <li class="nav-item" ng-if="user.userType == 'laboratory'"><a class="nav-link"
+                                                                                      href="/#!/manageDevice">仪器信息管理</a>
+                        </li>
+                        <li class="nav-item" ng-if="user.userType == 'manage'"><a class="nav-link"
+                                                                                  href="/#!/examineDevice">仪器信息审核</a>
+                        </li>
                     </ul>
                 </div>
             </li>
 
             <!--预约管理-->
-            <li class="nav-item">
+            <li class="nav-item" ng-if="user.userType">
                 <a class="nav-link" data-toggle="collapse" data-target="#reserve" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">预约管理</span>
@@ -155,17 +163,21 @@
                 </a>
                 <div class="collapse" id="reserve">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"><a class="nav-link" href="/#!/myReserve">我的预约</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">审核预约</a>
+                        <li class="nav-item" ng-if="user.userType == 'general'">
+                            <a class="nav-link" href="/#!/myReserve">我的预约</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/remark">查看评价</a>
+                        <li class="nav-item" ng-if="user.userType == 'laboratory'">
+                            <a class="nav-link" href="/#!/examineReserve">审核预约</a>
+                        </li>
+                        <li class="nav-item" ng-if="user.userType == 'manage'">
+                            <a class="nav-link" href="/#!/remark">查看评价</a>
                         </li>
                     </ul>
                 </div>
             </li>
 
             <!--用户管理-->
-            <li class="nav-item">
+            <li class="nav-item" ng-if="user.userType == 'manage'">
                 <a class="nav-link" data-toggle="collapse" data-target="#user" href="" aria-expanded="false"
                    aria-controls="ui-basic">
                     <span class="menu-title">用户管理</span>

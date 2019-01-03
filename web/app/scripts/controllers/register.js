@@ -6,7 +6,7 @@ angular.module('testApp')
 
         self.init = function () {
             $scope.register = {
-                laboratoryId: '',
+                laboratory: null,
                 name: "",
                 email: "",
                 password: "",
@@ -38,13 +38,28 @@ angular.module('testApp')
             } else if ($scope.register.confirm !== $scope.register.password) {
                 alert("两次输入的密码不一致");
             } else {
-                laboratory.getById()
-                user.register($scope.register.userType, {
+                let register = {
                     name: $scope.register.name,
                     email: $scope.register.email,
-                    password: $scope.register.password,
-                }, function (msg) {
-                    alert(msg);
+                    password: $scope.register.password
+                };
+
+                if ($scope.register.userType === 'laboratory') {
+                    register.laboratory = JSON.parse($scope.register.laboratory);
+                }
+
+                user.register($scope.register.userType, register, function (msg) {
+                    if (msg === 'ok') {
+                        self.init();
+                        if ($scope.register.userType === 'general') {
+                            alert('注册成功，请登录');
+                            $location.path('login');
+                        } else {
+                            alert('注册成功，请等待审核');
+                        }
+                    } else {
+                        alert(msg);
+                    }
                 });
             }
         };

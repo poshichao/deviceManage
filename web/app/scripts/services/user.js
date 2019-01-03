@@ -38,27 +38,27 @@ angular.module('testApp')
         };
 
         self.login = function (login, callback) {
-            $http.post(host + '/user/login?name=' + login.name + '&password=' + login.password, login)
+            $http.get(host + '/user/login?name=' + login.name + '&password=' + login.password)
                 .then(function success(response) {
                     if (callback) {
-                        callback("ok");
+                        callback(response.data);
                     }
-                }, function error(error) {
-                    console.log(error);
+                }, function error() {
                     if (callback) {
-                        callback("账号和密码不匹配");
+                        callback("登录错误");
                     }
                 });
         };
         self.register = function (userType, register, callback) {
             $http.post(host + '/user/' + userType, register)
-                .then(function success(response) {
-                    console.log(response);
-                    // if (callback) {
-                    //     callback("ok");
-                    // }
+                .then(function success() {
+                    if (callback) {
+                        callback('ok');
+                    }
                 }, function error() {
-                    console.log(error);
+                    if (callback) {
+                        callback('注册失败');
+                    }
                 });
         };
         return {

@@ -18,8 +18,8 @@ angular.module('testApp')
             } else if ($scope.device.name.length < 1) {
                 alert("请输入仪器名称");
             } else {
+                $scope.device.deviceType = JSON.parse($scope.device.deviceType);
                 device.add($scope.device, function (msg) {
-                    $scope.device.deviceType = JSON.parse($scope.device.deviceType);
                     console.log($scope.device);
                     if (msg === 'ok') {
                         alert("添加成功");

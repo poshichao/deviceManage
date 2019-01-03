@@ -30,6 +30,7 @@ angular.module('testApp')
             $http.get(url)
                 .then(function success(response) {
                     if (callback) {
+                        response.data.id = parseInt(id);
                         callback(response.data);
                     }
                 }, function error() {

@@ -26,13 +26,15 @@ angular.module('testApp')
             } else if ($scope.login.password.length < 1) {
                 alert("请输入密码");
             } else {
-                console.log($scope.login);
-                user.login($scope.login, function (msg) {
-                    if (msg === 'ok') {
+                user.login($scope.login, function (res) {
+                    console.log(res);
+                    if (res.user) {
                         $rootScope.isLogged = true;
+                        $rootScope.user = res.user;
+                        console.log($rootScope.user);
                         $location.url('main');
                     } else {
-                        alert(msg);
+                        alert("账号或密码错误");
                     }
                 });
             }
