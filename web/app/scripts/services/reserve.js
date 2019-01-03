@@ -26,13 +26,32 @@ angular.module('testApp')
                 });
         };
 
-        self.examine = function (reserveId, status, callback) {
+        self.getById = function (reserveId, callback) {
             $http.get(url + '/' + reserveId)
                 .then(function success(response) {
-                    console.log(response);
-                }, function error(response) {
+                    if (callback) {
+                        callback(response.data);
+                    }
+                }, function error() {
                     console.log(response);
                 });
+        };
+        self.examine = function (reserveId, status, callback) {
+            self.getById(reserveId, function (reserve) {
+                reserve.status = status;
+                console.log(reserve);
+                $http.put(host + '/reserve/' + reserveId, reserve)
+                    .then(function success() {
+                        if (callback) {
+                            callback('ok');
+                        }
+                    }, function error() {
+                        if (callback) {
+                            callback('审核错误');
+                        }
+                    });
+            });
+
         };
 
         self.remark = function (reserve, callback) {

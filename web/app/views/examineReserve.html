@@ -36,7 +36,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="reserve in reserves">
+                    <tr ng-repeat="reserve in reserves" ng-if="reserve.status == 0">
                         <td>{{$index+1}}</td>
                         <td>{{reserve.device.laboratory}}</td>
                         <td>{{reserve.device}}</td>

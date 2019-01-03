@@ -25,6 +25,7 @@
                     <label for="select-lab" class="col-sm-3 col-form-label">仪器所属单位</label>
                     <div class="col-sm-9">
                         <select class="form-control" id="select-lab" ng-model="search.laboratoryId">
+                            <option value='' disabled selected style='display:none;'>请选择仪器所属单位</option>
                             <option ng-repeat="lab in laboratories" value="{{lab.id}}">{{lab.name}}</option>
                         </select>
                     </div>
@@ -34,6 +35,7 @@
                     <label for="select-deviceType" class="col-sm-3 col-form-label">仪器所属类别</label>
                     <div class="col-sm-9">
                         <select class="form-control" id="select-deviceType" ng-model="search.deviceTypeId">
+                            <option value='' disabled selected style='display:none;'>请选择仪器所属类别</option>
                             <option ng-repeat="type in deviceTypes" value="{{type.id}}">{{type.name}}</option>
                         </select>
                     </div>

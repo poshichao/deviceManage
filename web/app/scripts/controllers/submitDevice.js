@@ -4,8 +4,8 @@ angular.module('testApp')
 
         self.init = function () {
             $scope.device = {
-                deviceType: null,
-                name: "",
+                deviceType: '',
+                name: '',
             };
             deviceType.getAll(function (res) {
                 $scope.deviceTypes = res.deviceTypes;
@@ -13,7 +13,7 @@ angular.module('testApp')
 
         };
         $scope.addDevice = function () {
-            if ($scope.device.deviceType == null) {
+            if ($scope.device.deviceType === '') {
                 alert("请选择仪器类别");
             } else if ($scope.device.name.length < 1) {
                 alert("请输入仪器名称");
@@ -23,6 +23,7 @@ angular.module('testApp')
                     console.log($scope.device);
                     if (msg === 'ok') {
                         alert("添加成功");
+                        self.init();
                     } else {
                         alert(msg);
                     }
