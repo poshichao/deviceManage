@@ -20,12 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void generalRegister(GeneralUser generalUser) {
-        RegistrationRequest registrationRequest = new RegistrationRequest();
-        registrationRequest.setName(generalUser.getName());
-        registrationRequest.setPassword(generalUser.getPassword());
-        registrationRequest.seteMail(generalUser.getEmail());
-        registrationRequest.setGeneral(true);
-        registrationRequestRepository.save(registrationRequest);
+        generalUserRepository.save(generalUser);
     }
 
     @Override
@@ -34,7 +29,6 @@ public class UserServiceImpl implements UserService {
         registrationRequest.setName(laboratoryUser.getName());
         registrationRequest.setPassword(laboratoryUser.getPassword());
         registrationRequest.seteMail(laboratoryUser.getEmail());
-        registrationRequest.setGeneral(false);
         registrationRequestRepository.save(registrationRequest);
     }
 
@@ -42,23 +36,15 @@ public class UserServiceImpl implements UserService {
     public void review(Long id, RegistrationRequest registrationRequest) {
         RegistrationRequest oldRegistrationRequest = registrationRequestRepository.findOne(id);
         oldRegistrationRequest.setStatus(registrationRequest.getStatus());
-        if (oldRegistrationRequest.getGeneral()) {
-            if (oldRegistrationRequest.getStatus().equals(RegistrationRequest.AGREE)) {
-                GeneralUser generalUser = new GeneralUser();
-                generalUser.setName(oldRegistrationRequest.getName());
-                generalUser.setPassword(oldRegistrationRequest.getPassword());
-                generalUser.setEmail(oldRegistrationRequest.geteMail());
-                generalUserRepository.save(generalUser);
-            }
-        } else {
-            if (oldRegistrationRequest.getStatus().equals(RegistrationRequest.AGREE)) {
-                LaboratoryUser laboratoryUser = new LaboratoryUser();
-                laboratoryUser.setName(oldRegistrationRequest.getName());
-                laboratoryUser.setPassword(oldRegistrationRequest.getPassword());
-                laboratoryUser.setEmail(oldRegistrationRequest.geteMail());
-                laboratoryUserRepository.save(laboratoryUser);
-            }
+
+        if (oldRegistrationRequest.getStatus().equals(RegistrationRequest.AGREE)) {
+            LaboratoryUser laboratoryUser = new LaboratoryUser();
+            laboratoryUser.setName(oldRegistrationRequest.getName());
+            laboratoryUser.setPassword(oldRegistrationRequest.getPassword());
+            laboratoryUser.setEmail(oldRegistrationRequest.geteMail());
+            laboratoryUserRepository.save(laboratoryUser);
         }
+
 
         registrationRequestRepository.save(oldRegistrationRequest);
     }
@@ -69,15 +55,15 @@ public class UserServiceImpl implements UserService {
         if (null == generalUser) {
             LaboratoryUser laboratoryUser = laboratoryUserRepository.findByName(name);
             if (null != laboratoryUser) {
-                if (laboratoryUser.getPassword() == password) {
-                    return "success";
+                if (laboratoryUser.getPassword().equals(password)) {
+                    return "laboratory";
                 }
             }
 
             return "error";
         } else {
-            if (generalUser.getPassword() == password) {
-                return  "success";
+            if (generalUser.getPassword().equals(password)) {
+                return  "general";
             }
 
             return "error";
