@@ -43,16 +43,17 @@ angular.module('testApp')
                     email: $scope.register.email,
                     password: $scope.register.password
                 };
+                let userType = $scope.register.userType;
 
-                if ($scope.register.userType === 'laboratory') {
-                    $scope.register.laboratory = JSON.parse($scope.register.laboratory);
+                if (userType === 'laboratory') {
+                    register.laboratory = JSON.parse($scope.register.laboratory);
                 }
                 console.log($scope.register);
 
-                user.register($scope.register.userType, $scope.register, function (msg) {
+                user.register(userType, register, function (msg) {
                     if (msg === 'ok') {
                         self.init();
-                        if ($scope.register.userType === 'general') {
+                        if (userType === 'general') {
                             alert('注册成功，请登录');
                             $location.path('login');
                         } else {

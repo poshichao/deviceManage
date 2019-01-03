@@ -26,6 +26,7 @@
                     <thead>
                     <tr>
                         <th>序号</th>
+                        <th>请求注册单位</th>
                         <th>用户名</th>
                         <th>密码</th>
                         <th>邮箱账号</th>
@@ -35,6 +36,7 @@
                     <tbody>
                     <tr ng-repeat="request in registrationRequests" ng-if="request.status == 0">
                         <td>{{$index+1}}</td>
+                        <td>{{request.laboratory.name}}</td>
                         <td>{{request.name}}</td>
                         <td>{{request.password}}</td>
                         <td>{{request.email}}</td>

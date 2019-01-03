@@ -28,22 +28,21 @@ angular.module('testApp')
 
         self.searchDevice = function () {
             if ($scope.search.laboratoryId != null) {
-                device.searchLaboratory($scope.search.laboratoryId, function(data) {
-                    console.log($scope.search.laboratoryId);
-                    console.log(data);
-                    $scope.devices = data;
+                device.searchLaboratory($scope.search.laboratoryId, function(res) {
+                    $scope.devices = res.devices;
                 });
             } else if ($scope.search.deviceTypeId != null) {
-                device.searchDeviceType($scope.search.deviceTypeId, function(data) {
-                    $scope.devices = data;
+                device.searchDeviceType($scope.search.deviceTypeId, function(res) {
+                    console.log(res);
+                    $scope.devices = res.devices;
                 });
             } else if ($scope.search.name != null) {
-                device.searchName($scope.search.name, function(data) {
-                    console.log(data);
-                    $scope.devices = data;
+                device.searchName($scope.search.name, function(res) {
+                    console.log(res);
+                    $scope.devices = res.devices;
                 });
             }
-            
+
             $rootScope.isSearch = false;
         };
 

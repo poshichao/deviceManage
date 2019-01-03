@@ -26,6 +26,7 @@
                     <thead>
                     <tr>
                         <th>序号</th>
+                        <th>所属单位</th>
                         <th>用户类型</th>
                         <th>用户名</th>
                         <th>密码</th>
@@ -36,6 +37,7 @@
                     <tbody>
                     <tr ng-repeat="user in users.generalUsers">
                         <td>{{$index+1}}</td>
+                        <td>无</td>
                         <td>普通用户</td>
                         <td>{{user.name}}</td>
                         <td>{{user.password}}</td>
@@ -47,6 +49,7 @@
                     </tr>
                     <tr ng-repeat="user in users.laboratoryUsers">
                         <td>{{offset+$index+1}}</td>
+                        <td>{{user.laboratory.name}}</td>
                         <td>管理单位用户</td>
                         <td>{{user.name}}</td>
                         <td>{{user.password}}</td>

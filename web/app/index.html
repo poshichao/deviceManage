@@ -77,7 +77,9 @@
                         <span class="font-weight-bold mb-2" ng-switch-when="general">用户{{user.id}}</span>
                         <span class="font-weight-bold mb-2" ng-switch-when="laboratory">单位用户{{user.id}}</span>
                         <span class="font-weight-bold mb-2" ng-switch-when="manage">主管用户{{user.id}}</span>
-                        <span class="text-secondary text-small">{{user.userType}}</span>
+                        <span class="text-secondary text-small" ng-switch-when="general">{{user.name}}</span>
+                        <span class="text-secondary text-small" ng-switch-when="laboratory">{{user._embedded.laboratory.name}}</span>
+                        <span class="text-secondary text-small" ng-switch-when="manage">{{user.userType}}</span>
                     </div>
 
                     <div class="nav-profile-text d-flex flex-row" ng-if="!isLogged">

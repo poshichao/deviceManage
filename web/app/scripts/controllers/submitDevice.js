@@ -1,5 +1,5 @@
 angular.module('testApp')
-    .controller('SubmitDeviceCtrl', function ($rootScope, $scope, $location, deviceType, device) {
+    .controller('SubmitDeviceCtrl', function ($rootScope, $scope, $location, user, deviceType, device) {
         var self = this;
 
         self.init = function () {
@@ -14,6 +14,7 @@ angular.module('testApp')
                 deviceTypeId: '',
                 name: '',
             };
+
             deviceType.getAll(function (res) {
                 $scope.deviceTypes = res.deviceTypes;
             });
@@ -28,7 +29,7 @@ angular.module('testApp')
                 var postData = {
                     name: $scope.device.name
                 };
-                device.add($rootScope.user.id, $scope.device.deviceTypeId, postData, function (msg) {
+                device.add($rootScope.user._embedded.laboratory.id, $scope.device.deviceTypeId, postData, function (msg) {
                     console.log($scope.device);
                     if (msg === 'ok') {
                         alert("添加成功");

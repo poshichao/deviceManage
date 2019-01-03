@@ -74,8 +74,9 @@ angular.module('testApp')
         };
 
 
-        self.add = function (userId, deviceTypeId, device, callback) {
+        self.add = function (laboratoryId, deviceTypeId, device, callback) {
             device.deviceType = host + '/deviceType/' + deviceTypeId;
+            device.laboratory = host + '/laboratory/' + laboratoryId;
             $http.post(url, device)
                 .then(function success() {
                     if (callback) {
