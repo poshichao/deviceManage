@@ -3,6 +3,7 @@ angular.module('testApp')
         var self = this;
 
         var host = 'http://localhost:8080';
+
         self.getAll = function (callback) {
             var users = {};
             $http.get(host + '/generalUser')
@@ -36,8 +37,34 @@ angular.module('testApp')
                 });
         };
 
+        self.login = function (login, callback) {
+            $http.post(host + '/user/login?name=' + login.name + '&password=' + login.password, login)
+                .then(function success(response) {
+                    if (callback) {
+                        callback("ok");
+                    }
+                }, function error(error) {
+                    console.log(error);
+                    if (callback) {
+                        callback("账号和密码不匹配");
+                    }
+                });
+        };
+        self.register = function (userType, register, callback) {
+            $http.post(host + '/user/' + userType, register)
+                .then(function success(response) {
+                    console.log(response);
+                    // if (callback) {
+                    //     callback("ok");
+                    // }
+                }, function error() {
+                    console.log(error);
+                });
+        };
         return {
             getAll: self.getAll,
-            deleteById: self.deleteById
+            deleteById: self.deleteById,
+            login: self.login,
+            register: self.register
         };
     });

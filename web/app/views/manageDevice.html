@@ -3,7 +3,7 @@
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
                 <i class="mdi mdi-home"></i>
               </span>
-        审核预约
+        仪器信息管理
     </h3>
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
@@ -14,11 +14,12 @@
         </ul>
     </nav>
 </div>
+
 <div class="row">
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">预约列表</h4>
+                <h4 class="card-title">仪器信息表格</h4>
                 <p class="card-description">
                     Add class <code>.table-bordered</code>
                 </p>
@@ -26,30 +27,21 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>预约部门</th>
-                        <th>预约设备</th>
-                        <th>预约开始时间</th>
-                        <th>预约结束时间</th>
-                        <th>用户名</th>
-                        <th>手机号码</th>
-                        <th>审核操作</th>
+                        <th>仪器所属单位</th>
+                        <th>仪器所属类别</th>
+                        <th>仪器名称</th>
+                        <th>仪器操作</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="reserve in reserves">
+                    <tr ng-repeat="device in devices">
                         <td>{{$index+1}}</td>
-                        <td>{{reserve.device.laboratory}}</td>
-                        <td>{{reserve.device}}</td>
-                        <td>{{reserve.startTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
-                        <td>{{reserve.endTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
-                        <td>{{}}</td>
-                        <td>{{reserve.phone}}</td>
+                        <td>{{device.laboratory.name}}</td>
+                        <td>{{device.deviceType.name}}</td>
+                        <td>{{device.name}}</td>
                         <td class="text-center">
-                            <button type="button" class="btn btn-success btn-md"
-                                    ng-click="examineReserve(reserve.id,true)">通过
-                            </button>
-                            <button type="button" class="btn btn-secondary btn-md"
-                                    ng-click="examineReserve(reserve.id,false)">不通过
+                            <button type="button" class="btn btn-danger btn-md"
+                                    ng-click="deleteDevice(device.id)">删除
                             </button>
                         </td>
                     </tr>
@@ -59,3 +51,5 @@
         </div>
     </div>
 </div>
+
+

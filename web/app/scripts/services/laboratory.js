@@ -17,14 +17,45 @@ angular.module('testApp')
             $http.get(url)
                 .then(function success(response) {
                     if (callback) {
-                        callback(response.data._embedded);
+                        callback(response
+                        );
                     }
                 }, function error() {
                     console.log(error);
                 });
         };
 
+        self.add = function (laboratory, callback) {
+            var url = 'http://localhost:8080/laboratory';
+
+            $http.post(url, laboratory)
+                .then(function success() {
+                    if (callback) {
+                        callback("ok");
+                    }
+                }, function error() {
+                    if (callback) {
+                        callback("添加失败");
+                    }
+                });
+        };
+
+        self.deleteById = function (laboratoryId, callback) {
+            var url = 'http://localhost:8080/laboratory/' + laboratoryId;
+            $http.delete(url)
+                .then(function success() {
+                    if (callback) {
+                        callback("ok");
+                    }
+                }, function error() {
+                    if (callback) {
+                        callback("删除失败，该单位存在关联数据");
+                    }
+                });
+        };
         return {
-            getAll: self.getAll
+            add: self.add,
+            getAll: self.getAll,
+            delete: self.deleteById
         };
     });

@@ -1,0 +1,57 @@
+<div class="page-header">
+    <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-home"></i>
+              </span>
+        仪器信息填报
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>Overview
+                <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">仪器信息填报表单</h4>
+                <br>
+                <form class="forms-sample">
+                    <div class="form-group row">
+                        <label for="device-laboratory" class="col-sm-3 col-form-label">仪器所属单位</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control"
+                                   id="device-laboratory" placeholder="测试实验室" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="select-deviceType" class="col-sm-3 col-form-label">仪器所属类别</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="select-deviceType" ng-model="device.deviceType">
+                                <option ng-repeat="type in deviceTypes" value="{{type}}">{{type.name}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="device-name" class="col-sm-3 col-form-label">仪器名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control"
+                                   ng-model="device.name"
+                                   id="device-name" placeholder="请输入仪器名称">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2" ng-click="addDevice()">提交
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

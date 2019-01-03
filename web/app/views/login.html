@@ -11,16 +11,18 @@
                         <h6 class="text-dark font-weight-light">登录科享科研仪器共享平台</h6>
                         <form class="pt-3">
                             <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" id="input-username"
-                                       placeholder="用户名">
+                                <input type="text" class="form-control form-control-lg"
+                                       ng-model="login.name"
+                                       id="input-username" placeholder="用户名">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control form-control-lg" id="input-password"
-                                       placeholder="密码">
+                                <input type="password" class="form-control form-control-lg"
+                                       ng-model="login.password"
+                                       id="input-password" placeholder="密码">
                             </div>
                             <div class="mt-3">
                                 <a class="btn btn-block btn-gradient-primary text-white btn-lg font-weight-medium auth-form-btn"
-                                   ng-click="login()">登录</a>
+                                   ng-click="userLogin()">登录</a>
                             </div>
                             <div class="text-center mt-4 font-weight-light">
                                 还没有账号吗？<a href="/#!/register" class="text-primary">立即注册</a>

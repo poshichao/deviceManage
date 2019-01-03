@@ -65,17 +65,23 @@
         <ul class="nav">
             <!--个人信息框-->
             <li class="nav-item nav-profile">
-                <a href="#" class="nav-link">
+                <div class="nav-link">
                     <div class="nav-profile-image">
                         <img src="images/faces/face1.jpg" alt="profile">
                         <span class="login-status online"></span> <!--change to offline or busy as needed-->
                     </div>
-                    <div class="nav-profile-text d-flex flex-column">
+
+                    <div class="nav-profile-text d-flex flex-column" ng-if="isLogged">
                         <span class="font-weight-bold mb-2">David Grey. H</span>
                         <span class="text-secondary text-small">Project Manager</span>
                     </div>
-                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
-                </a>
+
+                    <div class="nav-profile-text d-flex flex-row" ng-if="!isLogged">
+                        <a class="font-weight-bold mb-2 text-gray" href="/#!/login">登录</a>/
+                        <a class="font-weight-bold mb-2 text-gray" href="/#!/register">注册</a>
+                    </div>
+                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge" ng-if="isLogged"></i>
+                </div>
             </li>
             <!--其他列表项-->
 
@@ -96,13 +102,30 @@
                 </a>
                 <div class="collapse" id="look-through">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"><a class="nav-link" href="/#!/lab">浏览机构</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/laboratory">浏览单位</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#!/deviceType">浏览类别</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#!/device">浏览仪器</a>
                         </li>
                     </ul>
                 </div>
             </li>
+
+            <!--单位管理-->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#lab" href="" aria-expanded="false"
+                   aria-controls="ui-basic">
+                    <span class="menu-title">单位管理</span>
+                    <i class="menu-arrow"></i>
+                    <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                </a>
+                <div class="collapse" id="lab">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"><a class="nav-link" href="/#!/submitLaboratory">添加单位</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/manageLaboratory">单位信息管理</a></li>
+                    </ul>
+                </div>
+            </li>
+
 
             <!--仪器管理-->
             <li class="nav-item">
@@ -114,8 +137,10 @@
                 </a>
                 <div class="collapse" id="device">
                     <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"><a class="nav-link" href="/#!/manageDeviceType">仪器类别管理</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#!/submitDevice">仪器信息填报</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/submitDevice">仪器信息管理</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/manageDevice">仪器信息管理</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/examineDevice">仪器信息审核</a></li>
                     </ul>
                 </div>
             </li>
@@ -133,7 +158,7 @@
                         <li class="nav-item"><a class="nav-link" href="/#!/myReserve">我的预约</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">审核预约</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/#!/examineReserve">预约评价</a>
+                        <li class="nav-item"><a class="nav-link" href="/#!/remark">查看评价</a>
                         </li>
                     </ul>
                 </div>
@@ -141,10 +166,20 @@
 
             <!--用户管理-->
             <li class="nav-item">
-                <a class="nav-link" href="/#!/user">
+                <a class="nav-link" data-toggle="collapse" data-target="#user" href="" aria-expanded="false"
+                   aria-controls="ui-basic">
                     <span class="menu-title">用户管理</span>
-                    <i class="mdi mdi-contacts menu-icon"></i>
+                    <i class="menu-arrow"></i>
+                    <i class="mdi mdi-crosshairs-gps menu-icon"></i>
                 </a>
+                <div class="collapse" id="user">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"><a class="nav-link" href="/#!/examineRegister">审核注册请求</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/#!/user">用户信息管理</a></li>
+
+                    </ul>
+                </div>
             </li>
 
         </ul>
@@ -196,6 +231,14 @@
     <script src="scripts/controllers/user.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/register.js"></script>
+    <script src="scripts/controllers/examineDevice.js"></script>
+    <script src="scripts/controllers/manageDevice.js"></script>
+    <script src="scripts/controllers/manageDeviceType.js"></script>
+    <script src="scripts/controllers/manageLaboratory.js"></script>
+    <script src="scripts/controllers/remark.js"></script>
+    <script src="scripts/controllers/submitDevice.js"></script>
+    <script src="scripts/controllers/submitLaboratory.js"></script>
+    <script src="scripts/controllers/examineRegister.js"></script>
 
     <script src="scripts/services/laboratory.js"></script>
     <script src="scripts/services/deviceType.js"></script>
@@ -203,9 +246,7 @@
     <script src="scripts/services/reserve.js"></script>
     <script src="scripts/services/search.js"></script>
     <script src="scripts/services/user.js"></script>
-    <script src="scripts/services/login.js"></script>
-    <script src="scripts/services/register.js"></script>
-
+    <script src="scripts/services/registrationRequest.js"></script>
     <!-- endbower -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->

@@ -49,8 +49,8 @@ angular
                 templateUrl: 'views/reserve.html',
                 controller: 'ReserveCtrl'
             })
-            .when('/lab', {
-                templateUrl: 'views/lab.html',
+            .when('/laboratory', {
+                templateUrl: 'views/laboratory.html',
                 controller: 'LabCtrl'
             })
             .when('/search', {
@@ -68,6 +68,38 @@ angular
             .when('/user', {
                 templateUrl: 'views/user.html',
                 controller: 'UserCtrl'
+            })
+            .when('/examineDevice', {
+                templateUrl: 'views/examineDevice.html',
+                controller: 'ExamineDeviceCtrl'
+            })
+            .when('/manageDevice', {
+                templateUrl: 'views/manageDevice.html',
+                controller: 'ManageDeviceCtrl'
+            })
+            .when('/manageDeviceType', {
+                templateUrl: 'views/manageDeviceType.html',
+                controller: 'ManageDeviceTypeCtrl'
+            })
+            .when('/manageLaboratory', {
+                templateUrl: 'views/manageLaboratory.html',
+                controller: 'ManageLaboratoryCtrl'
+            })
+            .when('/remark', {
+                templateUrl: 'views/remark.html',
+                controller: 'RemarkCtrl'
+            })
+            .when('/submitDevice', {
+                templateUrl: 'views/submitDevice.html',
+                controller: 'SubmitDeviceCtrl'
+            })
+            .when('/submitLaboratory', {
+                templateUrl: 'views/submitLaboratory.html',
+                controller: 'SubmitLaboratoryCtrl'
+            })
+            .when('/examineRegister', {
+                templateUrl: 'views/examineRegister.html',
+                controller: 'ExamineRegisterCtrl'
             })
             .otherwise({
                 redirectTo: '/'

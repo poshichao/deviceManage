@@ -1,24 +1,24 @@
 angular.module('testApp')
-    .controller('ExamineReserveCtrl', function ($scope, reserve) {
+    .controller('ExamineRegisterCtrl', function ($scope, registrationRequest) {
         var self = this;
 
 
         self.init = function () {
-            reserve.getAll(function (data) {
-                console.log(data);
-                $scope.reserves = data.reserves;
+            registrationRequest.getAll(function (res) {
+                console.log(res);
+                $scope.registrationRequests = res.registrationRequests;
             });
         };
-        $scope.examineReserve = function (reserveId, flag) {
+        $scope.examineRegister = function (requestId, flag) {
             if (flag) {
                 if (confirm("确认通过审核吗")) {
-                    reserve.examine(reserveId, 1, function (msg) {
+                    registrationRequest.examine(requestId, 1, function (msg) {
                         console.log(msg);
                     });
                 }
             } else {
                 if (confirm("确认不通过审核吗")) {
-                    reserve.examine(reserveId, -1, function (msg) {
+                    registrationRequest.examine(requestId, -1, function (msg) {
                         console.log(msg);
                     });
                 }

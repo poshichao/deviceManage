@@ -21,25 +21,35 @@
             <div class="card-body">
                 <h4 class="card-title">高级搜索</h4>
                 <p class="card-description"></p>
-                <div class="form-group">
-                    <label for="select-lab">仪器所在实验室</label>
-                    <select class="form-control" id="select-lab" ng-model="search.laboratoryId">
-                        <option ng-repeat="lab in laboratories" value="{{lab.id}}">{{lab.name}}</option>
-                    </select>
+                <div class="form-group row">
+                    <label for="select-lab" class="col-sm-3 col-form-label">仪器所属单位</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="select-lab" ng-model="search.laboratoryId">
+                            <option ng-repeat="lab in laboratories" value="{{lab.id}}">{{lab.name}}</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="select-deviceType">仪器所属类别</label>
-                    <select class="form-control" id="select-deviceType" ng-model="search.deviceTypeId">
-                        <option ng-repeat="type in deviceTypes" value="{{type.id}}">{{type.name}}</option>
-                    </select>
+
+                <div class="form-group row">
+                    <label for="select-deviceType" class="col-sm-3 col-form-label">仪器所属类别</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="select-deviceType" ng-model="search.deviceTypeId">
+                            <option ng-repeat="type in deviceTypes" value="{{type.id}}">{{type.name}}</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="input-deviceName">仪器名称</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="请在此输入仪器名称关键字"
-                               id="input-deviceName" ng-model="search.deviceName">
-                        <div class="input-group-append">
-                            <button class="btn btn-sm btn-gradient-primary" type="button" ng-click="searchDevice()">搜索</button>
+
+                <div class="form-group row">
+                    <label for="input-deviceName" class="col-sm-3 col-form-label">仪器名称</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="请在此输入仪器名称关键字"
+                                   id="input-deviceName" ng-model="search.deviceName">
+                            <div class="input-group-append">
+                                <button class="btn btn-sm btn-gradient-primary" type="button" ng-click="searchDevice()">
+                                    搜索
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

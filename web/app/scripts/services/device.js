@@ -17,7 +17,6 @@ angular.module('testApp')
             var url = host + "/device";
             $http.get(url)
                 .then(function success(response) {
-                    console.log(response);
                     if (callback) {
                         callback(response.data._embedded);
                     }
@@ -38,8 +37,39 @@ angular.module('testApp')
                 });
         };
 
+        self.add = function (device, callback) {
+            var url = 'http://localhost:8080/device';
+
+            $http.post(url, device)
+                .then(function success() {
+                    if (callback) {
+                        callback("ok");
+                    }
+                }, function error() {
+                    if (callback) {
+                        callback("添加失败");
+                    }
+                });
+        };
+
+        self.deleteById = function (deviceId, callback) {
+            var url = 'http://localhost:8080/device/' + deviceId;
+            $http.delete(url)
+                .then(function success() {
+                    if (callback) {
+                        callback("ok");
+                    }
+                }, function error() {
+                    if (callback) {
+                        callback("删除失败，该仪器存在关联数据");
+                    }
+                });
+        };
+
         return {
             getAll: self.getAll,
-            getById: self.getById
+            getById: self.getById,
+            add: self.add,
+            deleteById: self.deleteById
         };
     });
