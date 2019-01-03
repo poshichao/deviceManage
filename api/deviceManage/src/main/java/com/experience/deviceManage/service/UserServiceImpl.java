@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         RegistrationRequest registrationRequest = new RegistrationRequest();
         registrationRequest.setName(laboratoryUser.getName());
         registrationRequest.setPassword(laboratoryUser.getPassword());
-        registrationRequest.seteMail(laboratoryUser.getEmail());
+        registrationRequest.setEmail(laboratoryUser.getEmail());
         registrationRequestRepository.save(registrationRequest);
     }
 
@@ -41,7 +41,8 @@ public class UserServiceImpl implements UserService {
             LaboratoryUser laboratoryUser = new LaboratoryUser();
             laboratoryUser.setName(oldRegistrationRequest.getName());
             laboratoryUser.setPassword(oldRegistrationRequest.getPassword());
-            laboratoryUser.setEmail(oldRegistrationRequest.geteMail());
+            laboratoryUser.setEmail(oldRegistrationRequest.getEmail());
+            laboratoryUser.setLaboratory(oldRegistrationRequest.getLaboratory());
             laboratoryUserRepository.save(laboratoryUser);
         }
 

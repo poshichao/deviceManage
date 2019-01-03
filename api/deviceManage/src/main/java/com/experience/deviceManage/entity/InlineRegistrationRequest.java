@@ -9,5 +9,5 @@ public interface InlineRegistrationRequest {
     String getName();
     String getPassword();
     String getEmail();
-    Boolean getGeneral();
+    Laboratory getLaboratory();
 }
