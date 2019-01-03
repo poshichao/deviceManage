@@ -1,9 +1,6 @@
 package com.experience.deviceManage.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * 注册请求
@@ -20,6 +17,8 @@ public class RegistrationRequest {
     private String name;                    // 用户名
     private String password;                // 密码
     private String email;                   // 邮件
+    @ManyToOne
+    private Laboratory laboratory;          // 实验室
 
     public Byte getStatus() {
         return status;
@@ -53,4 +52,11 @@ public class RegistrationRequest {
         this.email = email;
     }
 
+    public Laboratory getLaboratory() {
+        return laboratory;
+    }
+
+    public void setLaboratory(Laboratory laboratory) {
+        this.laboratory = laboratory;
+    }
 }
