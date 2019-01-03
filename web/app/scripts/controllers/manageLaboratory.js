@@ -4,6 +4,7 @@ angular.module('testApp')
 
         self.init = function () {
             laboratory.getAll(function (res) {
+                console.log(res);
                 $scope.laboratories = res.laboratories;
             });
         };

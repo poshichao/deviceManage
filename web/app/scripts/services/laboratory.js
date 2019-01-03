@@ -17,8 +17,7 @@ angular.module('testApp')
             $http.get(url)
                 .then(function success(response) {
                     if (callback) {
-                        callback(response
-                        );
+                        callback(response.data._embedded);
                     }
                 }, function error() {
                     console.log(error);
