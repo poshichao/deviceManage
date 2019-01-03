@@ -8,4 +8,5 @@ public interface InlineDevice {
     Laboratory getLaboratory();
     DeviceType getDeviceType();
     String getName();
+    Byte getStatus();
 }
