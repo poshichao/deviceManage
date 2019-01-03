@@ -1,17 +1,22 @@
 angular.module('testApp')
-    .controller('RegisterCtrl', function ($scope, user, $location) {
+    .controller('RegisterCtrl', function ($scope, user, laboratory, $location) {
         var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
         var self = this;
 
 
         self.init = function () {
             $scope.register = {
+                laboratoryId: '',
                 name: "",
-                eMail: "",
+                email: "",
                 password: "",
                 confirm: "",
                 userType: "general"
             };
+
+            laboratory.getAll(function (res) {
+                $scope.laboratories = res.laboratories;
+            });
         };
 
         $scope.userRegister = function () {
@@ -20,9 +25,9 @@ angular.module('testApp')
                 alert("请输入用户名");
             } else if ($scope.register.name.length < 3) {
                 alert("用户名长度不得小于3位");
-            } else if ($scope.register.eMail.length === 0) {
+            } else if ($scope.register.email.length === 0) {
                 alert("请输入您的邮箱");
-            } else if (!reg.test($scope.register.eMail)) {
+            } else if (!reg.test($scope.register.email)) {
                 alert("输入的邮箱格式错误");
             } else if ($scope.register.password.length === 0) {
                 alert("请输入密码");
@@ -33,9 +38,10 @@ angular.module('testApp')
             } else if ($scope.register.confirm !== $scope.register.password) {
                 alert("两次输入的密码不一致");
             } else {
+                laboratory.getById()
                 user.register($scope.register.userType, {
                     name: $scope.register.name,
-                    eMail: $scope.register.eMail,
+                    email: $scope.register.email,
                     password: $scope.register.password,
                 }, function (msg) {
                     alert(msg);
