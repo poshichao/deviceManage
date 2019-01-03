@@ -17,6 +17,10 @@ public class ManageUser {
     private String email;       // 邮箱
     private String password;    // 密码
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

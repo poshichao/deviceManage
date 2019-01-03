@@ -17,6 +17,10 @@ public class Laboratory {
     @OneToMany
     private List<Device> device;  // 设备
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

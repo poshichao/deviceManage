@@ -20,6 +20,10 @@ public class RegistrationRequest {
     @ManyToOne
     private Laboratory laboratory;          // 实验室
 
+    public Long getId() {
+        return id;
+    }
+
     public Byte getStatus() {
         return status;
     }

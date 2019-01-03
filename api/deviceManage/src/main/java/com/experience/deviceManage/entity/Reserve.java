@@ -24,6 +24,10 @@ public class Reserve {
     @ManyToOne
     private Device device;
 
+    public Long getId() {
+        return id;
+    }
+
     public Date getStartTime() {
         return startTime;
     }

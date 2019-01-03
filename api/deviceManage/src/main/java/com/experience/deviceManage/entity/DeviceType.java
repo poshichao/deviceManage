@@ -15,6 +15,10 @@ public class DeviceType {
 
     private String name;    // 名称
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
