@@ -13,7 +13,7 @@
                             <div class="form-group row" ng-if="register.userType == 'laboratory'">
                                 <div class="col-sm-9">
                                     <select class="form-control" id="select-lab" ng-model="search.laboratoryId">
-                                        <option value='' disabled selected style='display:none;'>选择注册单位</option>
+                                        <option value='' disabled selected style='display:none;'>请选择注册单位</option>
                                         <option ng-repeat="lab in laboratories" value="{{lab.id}}">{{lab.name}}</option>
                                     </select>
                                 </div>

@@ -1,17 +1,22 @@
 angular.module('testApp')
-    .controller('RegisterCtrl', function ($scope, user, $location) {
+    .controller('RegisterCtrl', function ($scope, user, laboratory, $location) {
         var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
         var self = this;
 
 
         self.init = function () {
             $scope.register = {
+                laboratoryId: '',
                 name: "",
                 email: "",
                 password: "",
                 confirm: "",
                 userType: "general"
             };
+
+            laboratory.getAll(function (res) {
+                $scope.laboratories = res.laboratories;
+            });
         };
 
         $scope.userRegister = function () {
@@ -33,6 +38,7 @@ angular.module('testApp')
             } else if ($scope.register.confirm !== $scope.register.password) {
                 alert("两次输入的密码不一致");
             } else {
+                laboratory.getById()
                 user.register($scope.register.userType, {
                     name: $scope.register.name,
                     email: $scope.register.email,

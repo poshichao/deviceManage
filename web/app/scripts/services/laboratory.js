@@ -23,7 +23,17 @@ angular.module('testApp')
                     console.log(error);
                 });
         };
-
+        self.getById = function (laboratoryId, callback) {
+            var url = 'http://localhost:8080/laboratory/' + laboratoryId;
+            $http.get(url)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data);
+                    }
+                }, function error() {
+                    console.log("错误");
+                });
+        };
         self.add = function (laboratory, callback) {
             var url = 'http://localhost:8080/laboratory';
 
@@ -55,6 +65,7 @@ angular.module('testApp')
         return {
             add: self.add,
             getAll: self.getAll,
-            delete: self.deleteById
+            delete: self.deleteById,
+            getById: self.getById,
         };
     });
