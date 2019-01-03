@@ -71,8 +71,12 @@
                         <span class="login-status online"></span> <!--change to offline or busy as needed-->
                     </div>
 
-                    <div class="nav-profile-text d-flex flex-column" ng-if="isLogged">
-                        <span class="font-weight-bold mb-2">用户{{user.id}}</span>
+                    <div class="nav-profile-text d-flex flex-column"
+                         ng-if="isLogged" ng-switch="user.userType">
+
+                        <span class="font-weight-bold mb-2" ng-switch-when="general">用户{{user.id}}</span>
+                        <span class="font-weight-bold mb-2" ng-switch-when="laboratory">单位用户{{user.id}}</span>
+                        <span class="font-weight-bold mb-2" ng-switch-when="manage">主管用户{{user.id}}</span>
                         <span class="text-secondary text-small">{{user.userType}}</span>
                     </div>
 

@@ -26,7 +26,7 @@ angular.module('testApp')
         };
 
         self.search = function (params, callback) {
-            $http.get(url+'?')
+            $http.get(url + '?')
                 .then(function success(response) {
                     if (callback) {
                         callback(response.data._embedded);
@@ -49,7 +49,8 @@ angular.module('testApp')
         };
 
 
-        self.add = function (device, callback) {
+        self.add = function (deviceTypeId, device, callback) {
+            device.deviceType = host + '/deviceType/' + deviceTypeId;
             $http.post(url, device)
                 .then(function success() {
                     if (callback) {

@@ -1,5 +1,5 @@
 angular.module('testApp')
-    .controller('ReserveCtrl', function ($scope, device, reserve, $routeParams, $location) {
+    .controller('ReserveCtrl', function ($rootScope, $scope, device, reserve, $routeParams, $location) {
         var self = this;
         var reg = new RegExp("^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\\d{8}$");
 
@@ -10,6 +10,10 @@ angular.module('testApp')
         };
 
         self.init = function () {
+            if (null == $rootScope.user) {
+                alert("请先登录");
+                $location.path("login");
+            }
             device.getById($routeParams.deviceId, function (device) {
                 $scope.device = device;
             });
@@ -37,11 +41,10 @@ angular.module('testApp')
                         // device: $scope.device,
                         startTime: st,
                         endTime: et,
-                        phone: $scope.reserve.phone
-
+                        phone: $scope.reserve.phone,
                     };
                     console.log(postData);
-                    reserve.submit(postData, function (msg) {
+                    reserve.submit($rootScope.user.id, $routeParams.deviceId, postData, function (msg) {
                         console.log(msg);
                         if (msg === 'ok') {
                             $location.path('/myReserve');

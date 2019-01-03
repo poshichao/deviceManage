@@ -38,7 +38,7 @@
                     <tr ng-repeat="reserve in reserves" ng-switch="reserve.status">
                         <td>{{$index+1}}</td>
                         <td>{{reserve.device.laboratory}}</td>
-                        <td>{{reserve.device}}</td>
+                        <td>{{reserve.device.name}}</td>
                         <td>{{reserve.startTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
                         <td>{{reserve.endTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
                         <td>{{reserve.phone}}</td>

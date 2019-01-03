@@ -4,7 +4,7 @@ angular.module('testApp')
 
         self.init = function () {
             $scope.device = {
-                deviceType: '',
+                deviceTypeId: '',
                 name: '',
             };
             deviceType.getAll(function (res) {
@@ -18,8 +18,10 @@ angular.module('testApp')
             } else if ($scope.device.name.length < 1) {
                 alert("请输入仪器名称");
             } else {
-                $scope.device.deviceType = JSON.parse($scope.device.deviceType);
-                device.add($scope.device, function (msg) {
+                var postData = {
+                    name: $scope.device.name
+                };
+                device.add($scope.device.deviceTypeId, postData, function (msg) {
                     console.log($scope.device);
                     if (msg === 'ok') {
                         alert("添加成功");
