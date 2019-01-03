@@ -17,6 +17,10 @@ public class Device {
     @ManyToOne
     private Laboratory laboratory;  // 实验室
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

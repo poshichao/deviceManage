@@ -11,8 +11,8 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-@RepositoryRestResource(path = "/device", excerptProjection = InlineDevice.class)
+@RepositoryRestResource(path = "device", excerptProjection = InlineDevice.class)
 public interface DeviceRepository extends CrudRepository<Device, Long> {
     @RestResource(path = "laboratoryAndDeviceType", rel = "laboratoryAndDeviceType")
-    List<Device> findAllByLaboratory_IdAndDeviceType_Id(@Param("id")Long id, @Param("deviceTypeId") Long deviceTypeId);
+    List<Device> findAllByLaboratory_IdAndDeviceType_Id(@Param("laboratoryId")Long laboratoryId, @Param("deviceTypeId") Long deviceTypeId);
 }
