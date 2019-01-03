@@ -42,6 +42,7 @@ public class UserServiceImpl implements UserService {
             laboratoryUser.setName(oldRegistrationRequest.getName());
             laboratoryUser.setPassword(oldRegistrationRequest.getPassword());
             laboratoryUser.setEmail(oldRegistrationRequest.getEmail());
+            laboratoryUser.setLaboratory(oldRegistrationRequest.getLaboratory());
             laboratoryUserRepository.save(laboratoryUser);
         }
 
