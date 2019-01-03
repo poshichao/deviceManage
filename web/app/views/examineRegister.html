@@ -3,7 +3,7 @@
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
                 <i class="mdi mdi-home"></i>
               </span>
-        审核预约
+        审核用户注册
     </h3>
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
@@ -18,7 +18,7 @@
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">预约列表</h4>
+                <h4 class="card-title">注册请求列表</h4>
                 <p class="card-description">
                     Add class <code>.table-bordered</code>
                 </p>
@@ -26,7 +26,6 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>注册类型</th>
                         <th>用户名</th>
                         <th>密码</th>
                         <th>邮箱账号</th>
@@ -36,14 +35,12 @@
                     <tbody>
                     <tr ng-repeat="request in registrationRequests">
                         <td>{{$index+1}}</td>
-                        <td ng-if="request.general">普通用户</td>
-                        <td ng-if="!request.general">管理部门</td>
                         <td>{{request.name}}</td>
                         <td>{{request.password}}</td>
-                        <td>{{request.eMail}}</td>
+                        <td>{{request.email}}</td>
                         <td class="text-center">
                             <button type="button" class="btn btn-success btn-md"
-                                    ng-click="examineRegister(1,true)">通过
+                                    ng-click="examineRegister(request.id,true)">通过
                             </button>
                             <button type="button" class="btn btn-secondary btn-md"
                                     ng-click="examineRegister(request.id,false)">不通过

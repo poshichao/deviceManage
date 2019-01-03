@@ -7,7 +7,7 @@ angular.module('testApp')
         self.init = function () {
             $scope.register = {
                 name: "",
-                eMail: "",
+                email: "",
                 password: "",
                 confirm: "",
                 userType: "general"
@@ -20,9 +20,9 @@ angular.module('testApp')
                 alert("请输入用户名");
             } else if ($scope.register.name.length < 3) {
                 alert("用户名长度不得小于3位");
-            } else if ($scope.register.eMail.length === 0) {
+            } else if ($scope.register.email.length === 0) {
                 alert("请输入您的邮箱");
-            } else if (!reg.test($scope.register.eMail)) {
+            } else if (!reg.test($scope.register.email)) {
                 alert("输入的邮箱格式错误");
             } else if ($scope.register.password.length === 0) {
                 alert("请输入密码");
@@ -35,7 +35,7 @@ angular.module('testApp')
             } else {
                 user.register($scope.register.userType, {
                     name: $scope.register.name,
-                    eMail: $scope.register.eMail,
+                    email: $scope.register.email,
                     password: $scope.register.password,
                 }, function (msg) {
                     alert(msg);
