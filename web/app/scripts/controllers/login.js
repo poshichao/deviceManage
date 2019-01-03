@@ -28,7 +28,7 @@ angular.module('testApp')
             } else {
                 user.login($scope.login, function (res) {
                     console.log(res);
-                    if (res.msg === 'ok') {
+                    if (res.user) {
                         $rootScope.isLogged = true;
                         $rootScope.user = res.user;
                         console.log($rootScope.user);

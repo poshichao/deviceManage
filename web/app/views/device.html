@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer text-center">
+            <div class="card-footer text-center" ng-if="user.userType == 'general'">
                 <a class="btn btn-gradient-danger btn-fw" href="/#!/reserve/{{device.id}}">预约</a>
             </div>
         </div>

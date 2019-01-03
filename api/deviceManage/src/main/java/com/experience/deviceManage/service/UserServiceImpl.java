@@ -60,13 +60,14 @@ public class UserServiceImpl implements UserService {
             LaboratoryUser laboratoryUser = laboratoryUserRepository.findByName(name);
             if (null != laboratoryUser) {
                 if (laboratoryUser.getPassword().equals(password)) {
-                    return String.format("{\"msg\":\"ok\",\"user\":{\"userType\":\"%s\",\"id\":%d}}", "laboratory", laboratoryUser.getId());
+                    return String.format("{\"user\":{\"userType\":\"%s\",\"id\":%d}}", "laboratory", laboratoryUser.getId());
                 }
             }else{
+//                ManageUser manageUser = ManageUserRepository.findByName(name);
             }
         } else {
             if (generalUser.getPassword().equals(password)) {
-                return String.format("{\"msg\":\"ok\",\"user\":{\"userType\":\"%s\",\"id\":%d}}", "general", generalUser.getId());
+                return String.format("{\"user\":{\"userType\":\"%s\",\"id\":%d}}", "general", generalUser.getId());
             }
         }
         return String.format("{\"msg\":\"%s\"}", "error");

@@ -32,6 +32,7 @@
                         <label for="select-deviceType" class="col-sm-3 col-form-label">仪器所属类别</label>
                         <div class="col-sm-9">
                             <select class="form-control" id="select-deviceType" ng-model="device.deviceType">
+                                <option value='' disabled selected style='display:none;'>请选择仪器类别</option>
                                 <option ng-repeat="type in deviceTypes" value="{{type}}">{{type.name}}</option>
                             </select>
                         </div>
