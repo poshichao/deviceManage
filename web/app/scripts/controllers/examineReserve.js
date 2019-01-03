@@ -13,13 +13,21 @@ angular.module('testApp')
             if (flag) {
                 if (confirm("确认通过审核吗")) {
                     reserve.examine(reserveId, 1, function (msg) {
-                        console.log(msg);
+                        if (msg === 'ok') {
+                            self.init();
+                        } else {
+                            alert(msg);
+                        }
                     });
                 }
             } else {
                 if (confirm("确认不通过审核吗")) {
                     reserve.examine(reserveId, -1, function (msg) {
-                        console.log(msg);
+                        if (msg === 'ok') {
+                            self.init();
+                        } else {
+                            alert(msg);
+                        }
                     });
                 }
             }

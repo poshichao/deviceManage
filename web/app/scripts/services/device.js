@@ -12,9 +12,9 @@ angular.module('testApp')
         var self = this;
 
         var host = "http://localhost:8080";
+        var url = host + "/device";
         // 获取所有仪器
         self.getAll = function (callback) {
-            var url = host + "/device";
             $http.get(url)
                 .then(function success(response) {
                     if (callback) {
@@ -25,9 +25,19 @@ angular.module('testApp')
                 });
         };
 
+        self.search = function (params, callback) {
+            $http.get(url + '?')
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data._embedded);
+                    }
+                }, function error() {
+                    console.log('error');
+                });
+        };
+
         self.getById = function (id, callback) {
-            var url = host + "/device/" + id;
-            $http.get(url)
+            $http.get(url + '/' + id)
                 .then(function success(response) {
                     if (callback) {
                         response.data.id = parseInt(id);
@@ -38,9 +48,9 @@ angular.module('testApp')
                 });
         };
 
-        self.add = function (device, callback) {
-            var url = 'http://localhost:8080/device';
 
+        self.add = function (deviceTypeId, device, callback) {
+            device.deviceType = host + '/deviceType/' + deviceTypeId;
             $http.post(url, device)
                 .then(function success() {
                     if (callback) {
@@ -54,8 +64,7 @@ angular.module('testApp')
         };
 
         self.deleteById = function (deviceId, callback) {
-            var url = 'http://localhost:8080/device/' + deviceId;
-            $http.delete(url)
+            $http.delete(url + '/' + deviceId)
                 .then(function success() {
                     if (callback) {
                         callback("ok");
@@ -69,6 +78,7 @@ angular.module('testApp')
 
         return {
             getAll: self.getAll,
+            search: self.search,
             getById: self.getById,
             add: self.add,
             deleteById: self.deleteById

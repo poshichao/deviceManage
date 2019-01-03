@@ -35,14 +35,16 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="reserve in reserves">
+                    <tr ng-repeat="reserve in reserves" ng-switch="reserve.status">
                         <td>{{$index+1}}</td>
                         <td>{{reserve.device.laboratory}}</td>
-                        <td>{{reserve.device}}</td>
+                        <td>{{reserve.device.name}}</td>
                         <td>{{reserve.startTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
                         <td>{{reserve.endTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
                         <td>{{reserve.phone}}</td>
-                        <td>{{reserve.status}}</td>
+                        <td ng-switch-when="1" class="text-success">审核通过</td>
+                        <td ng-switch-when="0" class="text-warning">等待审核</td>
+                        <td ng-switch-when="-1" class="text-danger">审核未通过</td>
                     </tr>
                     </tbody>
                 </table>

@@ -4,9 +4,9 @@ angular.module('testApp')
 
         self.init = function () {
             $scope.search = {
-                laboratoryId: 0,
-                deviceTypeId: 0,
-                deviceName: ""
+                laboratoryId: '',
+                deviceTypeId: '',
+                deviceName: ''
             };
 
             laboratory.getAll(function (res) {
