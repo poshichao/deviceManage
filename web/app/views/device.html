@@ -78,9 +78,9 @@
 
 </div>
 
-<div class="row" ng-if="!isSearch">
-    <div class="col-md-4 grid-margin stretch-card" ng-repeat="device in devices">
 
+<div class="row" ng-if="!isSearch">
+    <div class="col-md-4 grid-margin stretch-card" ng-repeat="device in devices" ng-if="device.status == 1">
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">{{device.name}}</h1>

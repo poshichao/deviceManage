@@ -74,8 +74,9 @@ angular.module('testApp')
         };
 
 
-        self.add = function (deviceTypeId, device, callback) {
+        self.add = function (laboratoryId, deviceTypeId, device, callback) {
             device.deviceType = host + '/deviceType/' + deviceTypeId;
+            device.laboratory = host + '/laboratory/' + laboratoryId;
             $http.post(url, device)
                 .then(function success() {
                     if (callback) {
@@ -88,6 +89,23 @@ angular.module('testApp')
                 });
         };
 
+        self.examine = function (deviceId, status, callback) {
+            self.getById(deviceId, function (device) {
+                device.status = status;
+                console.log(device);
+                $http.put(host + '/device/' + deviceId, device)
+                    .then(function success() {
+                        if (callback) {
+                            callback('ok');
+                        }
+                    }, function error() {
+                        if (callback) {
+                            callback('审核错误');
+                        }
+                    });
+            });
+
+        };
         self.deleteById = function (deviceId, callback) {
             $http.delete(url + '/' + deviceId)
                 .then(function success() {
@@ -105,6 +123,7 @@ angular.module('testApp')
             getAll: self.getAll,
             getById: self.getById,
             add: self.add,
+            examine: self.examine,
             deleteById: self.deleteById,
             searchLaboratory: self.searchLaboratory,
             searchDeviceType: self.searchDeviceType,

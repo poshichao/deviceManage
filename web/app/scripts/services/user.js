@@ -25,7 +25,16 @@ angular.module('testApp')
                 });
 
         };
-
+        self.getById = function (userType, id, callback) {
+            $http.get(host + '/' + userType + 'User/' + id)
+                .then(function success(response) {
+                    if (callback) {
+                        callback(response.data);
+                    }
+                }, function error() {
+                    console.log("获取错误");
+                });
+        };
         self.deleteById = function (userType, id, callback) {
             $http.delete(host + '/' + userType + '/' + id)
                 .then(function success() {
@@ -50,7 +59,6 @@ angular.module('testApp')
                 });
         };
         self.register = function (userType, register, callback) {
-            console.log(register);
             $http.post(host + '/user/' + userType, register)
                 .then(function success() {
                     if (callback) {
@@ -64,6 +72,7 @@ angular.module('testApp')
         };
         return {
             getAll: self.getAll,
+            getById: self.getById,
             deleteById: self.deleteById,
             login: self.login,
             register: self.register

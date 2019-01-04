@@ -29,9 +29,13 @@ angular.module('testApp')
                 user.login($scope.login, function (res) {
                     console.log(res);
                     if (res.user) {
-                        $rootScope.isLogged = true;
-                        $rootScope.user = res.user;
-                        console.log($rootScope.user);
+                        user.getById(res.user.userType, res.user.id, function (user) {
+                            user.id = res.user.id;
+                            user.userType = res.user.userType;
+                            $rootScope.isLogged = true;
+                            $rootScope.user = user;
+                            console.log($rootScope.user);
+                        });
                         $location.url('main');
                     } else {
                         alert("账号或密码错误");

@@ -26,25 +26,45 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>预约部门</th>
                         <th>预约设备</th>
                         <th>预约开始时间</th>
                         <th>预约结束时间</th>
                         <th>手机号码</th>
                         <th>预约状态</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr ng-repeat="reserve in reserves" ng-switch="reserve.status">
                         <td>{{$index+1}}</td>
-                        <td>{{reserve.device.laboratory}}</td>
                         <td>{{reserve.device.name}}</td>
-                        <td>{{reserve.startTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
-                        <td>{{reserve.endTime|date:'yyyy年MM月dd日  hh:mm'}}</td>
+                        <td>{{reserve.startTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
+                        <td>{{reserve.endTime|date:'yyyy年MM月dd日 hh:mm'}}</td>
                         <td>{{reserve.phone}}</td>
+                        <td ng-switch-when="2" class="text-primary">预约结束</td>
                         <td ng-switch-when="1" class="text-success">审核通过</td>
                         <td ng-switch-when="0" class="text-warning">等待审核</td>
                         <td ng-switch-when="-1" class="text-danger">审核未通过</td>
+
+                        <td ng-switch-when="2" class="text-center">
+                            <button type="button" class="btn btn-primary btn-md"
+                                    ng-if="reserve.comment == null"
+                                    ng-click="commentReserve(reserve.id)">评价预约
+                            </button>
+                        </td>
+                        <td ng-switch-when="1" class="text-center">
+                            <button type="button" class="btn btn-success btn-md"
+                                    ng-click="finishReserve(reserve.id)">完成预约
+                            </button>
+                        </td>
+                        <td ng-switch-when="0" class="text-center">
+                            <button type="button" class="btn btn-danger btn-md"
+                                    ng-click="cancelReserve(reserve.id)">取消预约
+                            </button>
+                        </td>
+                        <td ng-switch-when="-1" class="text-center">
+
+                        </td>
                     </tr>
                     </tbody>
                 </table>
