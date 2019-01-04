@@ -14,7 +14,7 @@ import java.util.List;
 @RepositoryRestResource(path = "device", excerptProjection = InlineDevice.class)
 public interface DeviceRepository extends CrudRepository<Device, Long> {
     @RestResource(path = "name", rel = "name")
-    List<Device> findByName(@Param("name") String name);
+    List<Device> findByNameStartsWith(@Param("name") String name);
 
     @RestResource(path = "laboratory", rel = "laboratory")
     List<Device> findByLaboratory_Id(@Param("laboratoryId")Long laboratoryId);
